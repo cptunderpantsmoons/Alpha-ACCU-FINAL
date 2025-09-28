@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#NoncurrentBiologicalAssetsItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/NoncurrentBiologicalAssetsItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/NoncurrentBiologicalAssetsItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentBiologicalAssetsComponentsHypercube" xlink:label="aasb1060_NoncurrentBiologicalAssetsComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ClassDimension" xlink:label="aasb1060_ClassDimension"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentBiologicalAssetsComponentsHypercube" xlink:to="aasb1060_ClassDimension" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AllClassesMember" xlink:label="aasb1060_AllClassesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ClassDimension" xlink:to="aasb1060_AllClassesMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CropsMember" xlink:label="aasb1060_CropsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_CropsMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_LivestockMember" xlink:label="aasb1060_LivestockMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_LivestockMember" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousBiologicalAssetsMember" xlink:label="aasb1060_OtherMiscellaneousBiologicalAssetsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_OtherMiscellaneousBiologicalAssetsMember" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentBiologicalAssetsComponentsLineItems" xlink:label="aasb1060_NoncurrentBiologicalAssetsComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentBiologicalAssetsComponentsHypercube" xlink:to="aasb1060_NoncurrentBiologicalAssetsComponentsLineItems" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentBiologicalAssetsRollUp" xlink:label="aasb1060_NoncurrentBiologicalAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentBiologicalAssetsComponentsLineItems" xlink:to="aasb1060_NoncurrentBiologicalAssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentBiologicalAssetsGross" xlink:label="aasb1060_NoncurrentBiologicalAssetsGross"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentBiologicalAssetsRollUp" xlink:to="aasb1060_NoncurrentBiologicalAssetsGross" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AccumulatedDepreciationAndImpairmentOfNoncurrentBiologicalAssets" xlink:label="aasb1060_AccumulatedDepreciationAndImpairmentOfNoncurrentBiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentBiologicalAssetsRollUp" xlink:to="aasb1060_AccumulatedDepreciationAndImpairmentOfNoncurrentBiologicalAssets" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentBiologicalAssets" xlink:label="aasb1060_NoncurrentBiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentBiologicalAssetsRollUp" xlink:to="aasb1060_NoncurrentBiologicalAssets" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#TradeAndOtherReceivablesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherReceivablesItems' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherReceivablesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherReceivables" xlink:label="aasb1060_TradeAndOtherReceivables"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeReceivables" xlink:label="aasb1060_TradeReceivables"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_TradeAndOtherReceivables" xlink:to="aasb1060_TradeReceivables" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherReceivables" xlink:label="aasb1060_OtherReceivables"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_TradeAndOtherReceivables" xlink:to="aasb1060_OtherReceivables" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DueFromRelatedParties" xlink:label="aasb1060_DueFromRelatedParties"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_TradeAndOtherReceivables" xlink:to="aasb1060_DueFromRelatedParties" order="3" weight="1" use="optional"/>
+</calculationLink>
+</link:linkbase>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OtherMiscellaneousAssetsItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousAssetsItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousAssetsItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousAssetsComponentsHypercube" xlink:label="aasb1060_OtherMiscellaneousAssetsComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousAssetsComponentsLineItems" xlink:label="aasb1060_OtherMiscellaneousAssetsComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousAssetsComponentsHypercube" xlink:to="aasb1060_OtherMiscellaneousAssetsComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousAssetsRollUp" xlink:label="aasb1060_OtherMiscellaneousAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousAssetsComponentsLineItems" xlink:to="aasb1060_OtherMiscellaneousAssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RestrictedCashCashEquivalents" xlink:label="aasb1060_RestrictedCashCashEquivalents"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousAssetsRollUp" xlink:to="aasb1060_RestrictedCashCashEquivalents" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Prepayments" xlink:label="aasb1060_Prepayments"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousAssetsRollUp" xlink:to="aasb1060_Prepayments" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredCharges" xlink:label="aasb1060_DeferredCharges"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousAssetsRollUp" xlink:to="aasb1060_DeferredCharges" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ContractAssets" xlink:label="aasb1060_ContractAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousAssetsRollUp" xlink:to="aasb1060_ContractAssets" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherSundryAssets" xlink:label="aasb1060_OtherSundryAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousAssetsRollUp" xlink:to="aasb1060_OtherSundryAssets" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousAssets" xlink:label="aasb1060_OtherMiscellaneousAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousAssetsRollUp" xlink:to="aasb1060_OtherMiscellaneousAssets" order="6" use="optional"/>
+</presentationLink>
+</link:linkbase>

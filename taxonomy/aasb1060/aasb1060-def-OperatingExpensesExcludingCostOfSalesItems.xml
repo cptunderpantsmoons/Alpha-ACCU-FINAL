@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OperatingExpensesExcludingCostOfSalesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OperatingExpensesExcludingCostOfSalesItems' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://xbrlsite.com/seattlemethod/cm/cm-arcroles.xsd#class-subClass' arcroleURI='http://www.xbrlsite.com/seattlemethod/conceptual-model/arcrole/class-subClass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OperatingExpensesExcludingCostOfSalesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:label="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Depreciation" xlink:label="aasb1060_Depreciation"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_Depreciation" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OccupancyExpenses" xlink:label="aasb1060_OccupancyExpenses"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_OccupancyExpenses" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AdministrativeExpenses" xlink:label="aasb1060_AdministrativeExpenses"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_AdministrativeExpenses" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ResearchAndDevelopmentExpenses" xlink:label="aasb1060_ResearchAndDevelopmentExpenses"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_ResearchAndDevelopmentExpenses" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ExpensesOfRestructuringActivities" xlink:label="aasb1060_ExpensesOfRestructuringActivities"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_ExpensesOfRestructuringActivities" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EmployeeBenefits" xlink:label="aasb1060_EmployeeBenefits"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_EmployeeBenefits" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AdvertisingCosts" xlink:label="aasb1060_AdvertisingCosts"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_AdvertisingCosts" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherOperatingExpensesByFunction" xlink:label="aasb1060_OtherOperatingExpensesByFunction"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_OtherOperatingExpensesByFunction" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingExpensesExcludingCostOfSales" xlink:label="aasb1060_OperatingExpensesExcludingCostOfSales"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_OperatingExpensesExcludingCostOfSales" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingExpensesExclusingCostOfSalesComponentsHypercube" xlink:label="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsLineItems" xlink:to="aasb1060_OperatingExpensesExclusingCostOfSalesComponentsHypercube" order="10" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</definitionLink>
+</link:linkbase>

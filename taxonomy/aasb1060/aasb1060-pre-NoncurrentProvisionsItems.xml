@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#NoncurrentProvisionsItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/NoncurrentProvisionsItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/NoncurrentProvisionsItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentProvisionsComponentsHypercube" xlink:label="aasb1060_NoncurrentProvisionsComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentProvisionsComponentsLineItems" xlink:label="aasb1060_NoncurrentProvisionsComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentProvisionsComponentsHypercube" xlink:to="aasb1060_NoncurrentProvisionsComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentProvisionsRollUp" xlink:label="aasb1060_NoncurrentProvisionsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentProvisionsComponentsLineItems" xlink:to="aasb1060_NoncurrentProvisionsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentEmployeeBenefitsProvision" xlink:label="aasb1060_NoncurrentEmployeeBenefitsProvision"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentProvisionsRollUp" xlink:to="aasb1060_NoncurrentEmployeeBenefitsProvision" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentWarrantyProvision" xlink:label="aasb1060_NoncurrentWarrantyProvision"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentProvisionsRollUp" xlink:to="aasb1060_NoncurrentWarrantyProvision" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentRestorationProvision" xlink:label="aasb1060_NoncurrentRestorationProvision"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentProvisionsRollUp" xlink:to="aasb1060_NoncurrentRestorationProvision" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentOtherMiscellaneousProvisions" xlink:label="aasb1060_NoncurrentOtherMiscellaneousProvisions"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentProvisionsRollUp" xlink:to="aasb1060_NoncurrentOtherMiscellaneousProvisions" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncurrentProvisions" xlink:label="aasb1060_NoncurrentProvisions"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NoncurrentProvisionsRollUp" xlink:to="aasb1060_NoncurrentProvisions" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>

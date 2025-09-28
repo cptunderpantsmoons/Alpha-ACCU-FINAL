@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OtherFinancialLiabilitiesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherFinancialLiabilitiesItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherFinancialLiabilitiesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialLiabilitiesComponentsHypercube" xlink:label="aasb1060_OtherFinancialLiabilitiesComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialLiabilitiesComponentsLineItems" xlink:label="aasb1060_OtherFinancialLiabilitiesComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialLiabilitiesComponentsHypercube" xlink:to="aasb1060_OtherFinancialLiabilitiesComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialLiabilitiesRollUp" xlink:label="aasb1060_OtherFinancialLiabilitiesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialLiabilitiesComponentsLineItems" xlink:to="aasb1060_OtherFinancialLiabilitiesRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialLiabilitiesMeasuredAtFairValueThroughProfitOrLoss" xlink:label="aasb1060_OtherFinancialLiabilitiesMeasuredAtFairValueThroughProfitOrLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialLiabilitiesRollUp" xlink:to="aasb1060_OtherFinancialLiabilitiesMeasuredAtFairValueThroughProfitOrLoss" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialLiabilitiesMeasuredAtAmortisedCost" xlink:label="aasb1060_OtherFinancialLiabilitiesMeasuredAtAmortisedCost"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialLiabilitiesRollUp" xlink:to="aasb1060_OtherFinancialLiabilitiesMeasuredAtAmortisedCost" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialLiabilities" xlink:label="aasb1060_OtherFinancialLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialLiabilitiesRollUp" xlink:to="aasb1060_OtherFinancialLiabilities" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

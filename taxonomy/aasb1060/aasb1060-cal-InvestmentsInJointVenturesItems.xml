@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#InvestmentsInJointVenturesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/InvestmentsInJointVenturesItems' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/InvestmentsInJointVenturesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentsInJointVentures" xlink:label="aasb1060_InvestmentsInJointVentures"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentsInJointVenturesMeasuredUsingEquityMethod" xlink:label="aasb1060_InvestmentsInJointVenturesMeasuredUsingEquityMethod"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_InvestmentsInJointVentures" xlink:to="aasb1060_InvestmentsInJointVenturesMeasuredUsingEquityMethod" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentsInJointVenturesMeasuredAtFairValueThroughProfitLoss" xlink:label="aasb1060_InvestmentsInJointVenturesMeasuredAtFairValueThroughProfitLoss"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_InvestmentsInJointVentures" xlink:to="aasb1060_InvestmentsInJointVenturesMeasuredAtFairValueThroughProfitLoss" order="2" weight="1" use="optional"/>
+</calculationLink>
+</link:linkbase>

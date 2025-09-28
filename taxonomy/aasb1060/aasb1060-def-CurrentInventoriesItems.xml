@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#CurrentInventoriesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentInventoriesItems' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://xbrlsite.com/seattlemethod/cm/cm-arcroles.xsd#class-subClass' arcroleURI='http://www.xbrlsite.com/seattlemethod/conceptual-model/arcrole/class-subClass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentInventoriesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentInventoriesComponentsLineItems" xlink:label="aasb1060_CurrentInventoriesComponentsLineItems"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentFinishedGoodsInventories" xlink:label="aasb1060_CurrentFinishedGoodsInventories"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_CurrentInventoriesComponentsLineItems" xlink:to="aasb1060_CurrentFinishedGoodsInventories" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentWorkInProgressInventories" xlink:label="aasb1060_CurrentWorkInProgressInventories"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_CurrentInventoriesComponentsLineItems" xlink:to="aasb1060_CurrentWorkInProgressInventories" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentRawMaterialsInventories" xlink:label="aasb1060_CurrentRawMaterialsInventories"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_CurrentInventoriesComponentsLineItems" xlink:to="aasb1060_CurrentRawMaterialsInventories" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentOtherMiscellaneousInventories" xlink:label="aasb1060_CurrentOtherMiscellaneousInventories"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_CurrentInventoriesComponentsLineItems" xlink:to="aasb1060_CurrentOtherMiscellaneousInventories" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentInventories" xlink:label="aasb1060_CurrentInventories"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_CurrentInventoriesComponentsLineItems" xlink:to="aasb1060_CurrentInventories" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentInventoriesComponentsHypercube" xlink:label="aasb1060_CurrentInventoriesComponentsHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="aasb1060_CurrentInventoriesComponentsLineItems" xlink:to="aasb1060_CurrentInventoriesComponentsHypercube" order="6" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</definitionLink>
+</link:linkbase>

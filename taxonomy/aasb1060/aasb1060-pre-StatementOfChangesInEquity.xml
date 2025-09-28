@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#StatementOfChangesInEquity' roleURI='http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfChangesInEquity' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfChangesInEquity">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_StatementOfChangesInEquityHypercube" xlink:label="aasb1060_StatementOfChangesInEquityHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_StatementOfChangesInEquityLineItems" xlink:label="aasb1060_StatementOfChangesInEquityLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_StatementOfChangesInEquityHypercube" xlink:to="aasb1060_StatementOfChangesInEquityLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ChangesInEquityRollForward" xlink:label="aasb1060_ChangesInEquityRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_StatementOfChangesInEquityLineItems" xlink:to="aasb1060_ChangesInEquityRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Equity" xlink:label="aasb1060_Equity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_Equity" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLoss" xlink:label="aasb1060_ProfitLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_ProfitLoss" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherComprehensiveIncomeLoss" xlink:label="aasb1060_OtherComprehensiveIncomeLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_OtherComprehensiveIncomeLoss" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Dividends" xlink:label="aasb1060_Dividends"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_Dividends" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IssueOfShares" xlink:label="aasb1060_IssueOfShares"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_IssueOfShares" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BuybackOfShares" xlink:label="aasb1060_BuybackOfShares"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_BuybackOfShares" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SharebasedPayments" xlink:label="aasb1060_SharebasedPayments"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_SharebasedPayments" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TransferOfReserves" xlink:label="aasb1060_TransferOfReserves"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_TransferOfReserves" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousEquityTransactions" xlink:label="aasb1060_OtherMiscellaneousEquityTransactions"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_OtherMiscellaneousEquityTransactions" order="9" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfChangesInEquity">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ChangesInEquityRollForward" xlink:label="aasb1060_ChangesInEquityRollForward"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Equity" xlink:label="aasb1060_Equity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="aasb1060_ChangesInEquityRollForward" xlink:to="aasb1060_Equity" order="10" use="optional"/>
+</presentationLink>
+</link:linkbase>

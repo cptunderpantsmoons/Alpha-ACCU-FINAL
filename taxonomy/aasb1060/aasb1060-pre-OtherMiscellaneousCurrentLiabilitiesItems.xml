@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OtherMiscellaneousCurrentLiabilitiesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousCurrentLiabilitiesItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousCurrentLiabilitiesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousCurrentLiabilitiesComponentsHypercube" xlink:label="aasb1060_OtherMiscellaneousCurrentLiabilitiesComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousCurrentLiabilitiesComponentsLineItems" xlink:label="aasb1060_OtherMiscellaneousCurrentLiabilitiesComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousCurrentLiabilitiesComponentsHypercube" xlink:to="aasb1060_OtherMiscellaneousCurrentLiabilitiesComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousCurrentLiabilitiesRollUp" xlink:label="aasb1060_OtherMiscellaneousCurrentLiabilitiesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousCurrentLiabilitiesComponentsLineItems" xlink:to="aasb1060_OtherMiscellaneousCurrentLiabilitiesRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentRefundLiability" xlink:label="aasb1060_CurrentRefundLiability"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousCurrentLiabilitiesRollUp" xlink:to="aasb1060_CurrentRefundLiability" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentDeferredIncome" xlink:label="aasb1060_CurrentDeferredIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousCurrentLiabilitiesRollUp" xlink:to="aasb1060_CurrentDeferredIncome" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentGovernmentGrants" xlink:label="aasb1060_CurrentGovernmentGrants"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousCurrentLiabilitiesRollUp" xlink:to="aasb1060_CurrentGovernmentGrants" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherSundryCurrentLiabilities" xlink:label="aasb1060_OtherSundryCurrentLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousCurrentLiabilitiesRollUp" xlink:to="aasb1060_OtherSundryCurrentLiabilities" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousCurrentLiabilities" xlink:label="aasb1060_OtherMiscellaneousCurrentLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherMiscellaneousCurrentLiabilitiesRollUp" xlink:to="aasb1060_OtherMiscellaneousCurrentLiabilities" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>

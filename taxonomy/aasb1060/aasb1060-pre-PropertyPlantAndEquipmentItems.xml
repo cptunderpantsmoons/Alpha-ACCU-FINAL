@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#PropertyPlantAndEquipmentItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/PropertyPlantAndEquipmentItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/PropertyPlantAndEquipmentItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PropertyPlantAndEquipmentByClassHypercube" xlink:label="aasb1060_PropertyPlantAndEquipmentByClassHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ClassDimension" xlink:label="aasb1060_ClassDimension"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_PropertyPlantAndEquipmentByClassHypercube" xlink:to="aasb1060_ClassDimension" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AllClassesMember" xlink:label="aasb1060_AllClassesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ClassDimension" xlink:to="aasb1060_AllClassesMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_FreeholdLandMember" xlink:label="aasb1060_FreeholdLandMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_FreeholdLandMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BuildingsMember" xlink:label="aasb1060_BuildingsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_BuildingsMember" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PlantAndMachineryMember" xlink:label="aasb1060_PlantAndMachineryMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_PlantAndMachineryMember" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_FurnitureAndFittingsMember" xlink:label="aasb1060_FurnitureAndFittingsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_FurnitureAndFittingsMember" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OfficeEquipmentMember" xlink:label="aasb1060_OfficeEquipmentMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_OfficeEquipmentMember" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TangibleExplorationAndEvaluationAssetsMember" xlink:label="aasb1060_TangibleExplorationAndEvaluationAssetsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_TangibleExplorationAndEvaluationAssetsMember" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ConstructionInProgressMember" xlink:label="aasb1060_ConstructionInProgressMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_ConstructionInProgressMember" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousPropertyPlantAndEquipmentMember" xlink:label="aasb1060_OtherMiscellaneousPropertyPlantAndEquipmentMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_OtherMiscellaneousPropertyPlantAndEquipmentMember" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PropertyPlantAndEquipmentByClassLineItems" xlink:label="aasb1060_PropertyPlantAndEquipmentByClassLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_PropertyPlantAndEquipmentByClassHypercube" xlink:to="aasb1060_PropertyPlantAndEquipmentByClassLineItems" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PropertyPlantAndEquipmentNetRollUp" xlink:label="aasb1060_PropertyPlantAndEquipmentNetRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_PropertyPlantAndEquipmentByClassLineItems" xlink:to="aasb1060_PropertyPlantAndEquipmentNetRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PropertyPlantAndEquipmentGross" xlink:label="aasb1060_PropertyPlantAndEquipmentGross"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_PropertyPlantAndEquipmentNetRollUp" xlink:to="aasb1060_PropertyPlantAndEquipmentGross" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AccumulatedDepreciationAmortisationAndImpairment" xlink:label="aasb1060_AccumulatedDepreciationAmortisationAndImpairment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_PropertyPlantAndEquipmentNetRollUp" xlink:to="aasb1060_AccumulatedDepreciationAmortisationAndImpairment" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PropertyPlantAndEquipmentNet" xlink:label="aasb1060_PropertyPlantAndEquipmentNet"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_PropertyPlantAndEquipmentNetRollUp" xlink:to="aasb1060_PropertyPlantAndEquipmentNet" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

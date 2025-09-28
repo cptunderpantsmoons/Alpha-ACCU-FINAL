@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#StatementOfProfitOrLossByFunction' roleURI='http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfProfitOrLossByFunction' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfProfitOrLossByFunction">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLoss" xlink:label="aasb1060_ProfitLoss"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossFromContinuingOperations" xlink:label="aasb1060_ProfitLossFromContinuingOperations"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLoss" xlink:to="aasb1060_ProfitLossFromContinuingOperations" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossBeforeTax" xlink:label="aasb1060_ProfitLossBeforeTax"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLossFromContinuingOperations" xlink:to="aasb1060_ProfitLossBeforeTax" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossBeforeFinanceCostsTaxExpense" xlink:label="aasb1060_ProfitLossBeforeFinanceCostsTaxExpense"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLossBeforeTax" xlink:to="aasb1060_ProfitLossBeforeFinanceCostsTaxExpense" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossFromOperatingActivities" xlink:label="aasb1060_ProfitLossFromOperatingActivities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLossBeforeFinanceCostsTaxExpense" xlink:to="aasb1060_ProfitLossFromOperatingActivities" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingIncomeLoss" xlink:label="aasb1060_OperatingIncomeLoss"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLossFromOperatingActivities" xlink:to="aasb1060_OperatingIncomeLoss" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GrossProfit" xlink:label="aasb1060_GrossProfit"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OperatingIncomeLoss" xlink:to="aasb1060_GrossProfit" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Revenue" xlink:label="aasb1060_Revenue"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_GrossProfit" xlink:to="aasb1060_Revenue" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CostOfSales" xlink:label="aasb1060_CostOfSales"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_GrossProfit" xlink:to="aasb1060_CostOfSales" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherOperatingIncome" xlink:label="aasb1060_OtherOperatingIncome"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OperatingIncomeLoss" xlink:to="aasb1060_OtherOperatingIncome" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingExpensesExcludingCostOfSales" xlink:label="aasb1060_OperatingExpensesExcludingCostOfSales"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLossFromOperatingActivities" xlink:to="aasb1060_OperatingExpensesExcludingCostOfSales" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NonoperatingIncomeExpense" xlink:label="aasb1060_NonoperatingIncomeExpense"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLossBeforeFinanceCostsTaxExpense" xlink:to="aasb1060_NonoperatingIncomeExpense" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IncomeLossFromEquityAccountedEntities" xlink:label="aasb1060_IncomeLossFromEquityAccountedEntities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_NonoperatingIncomeExpense" xlink:to="aasb1060_IncomeLossFromEquityAccountedEntities" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherNonoperatingIncomeExpenseNotIncludingFinanceCostsOrTaxExpense" xlink:label="aasb1060_OtherNonoperatingIncomeExpenseNotIncludingFinanceCostsOrTaxExpense"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_NonoperatingIncomeExpense" xlink:to="aasb1060_OtherNonoperatingIncomeExpenseNotIncludingFinanceCostsOrTaxExpense" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_FinanceCostsIncome" xlink:label="aasb1060_FinanceCostsIncome"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLossBeforeTax" xlink:to="aasb1060_FinanceCostsIncome" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TaxExpenseIncome" xlink:label="aasb1060_TaxExpenseIncome"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLossFromContinuingOperations" xlink:to="aasb1060_TaxExpenseIncome" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossFromDiscontinuedOperations" xlink:label="aasb1060_ProfitLossFromDiscontinuedOperations"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_ProfitLoss" xlink:to="aasb1060_ProfitLossFromDiscontinuedOperations" order="2" weight="1" use="optional"/>
+</calculationLink>
+</link:linkbase>

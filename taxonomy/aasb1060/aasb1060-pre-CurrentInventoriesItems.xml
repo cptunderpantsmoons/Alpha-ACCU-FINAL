@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#CurrentInventoriesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentInventoriesItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentInventoriesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentInventoriesComponentsHypercube" xlink:label="aasb1060_CurrentInventoriesComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentInventoriesComponentsLineItems" xlink:label="aasb1060_CurrentInventoriesComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentInventoriesComponentsHypercube" xlink:to="aasb1060_CurrentInventoriesComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentInventoriesRollUp" xlink:label="aasb1060_CurrentInventoriesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentInventoriesComponentsLineItems" xlink:to="aasb1060_CurrentInventoriesRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentFinishedGoodsInventories" xlink:label="aasb1060_CurrentFinishedGoodsInventories"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentInventoriesRollUp" xlink:to="aasb1060_CurrentFinishedGoodsInventories" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentWorkInProgressInventories" xlink:label="aasb1060_CurrentWorkInProgressInventories"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentInventoriesRollUp" xlink:to="aasb1060_CurrentWorkInProgressInventories" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentRawMaterialsInventories" xlink:label="aasb1060_CurrentRawMaterialsInventories"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentInventoriesRollUp" xlink:to="aasb1060_CurrentRawMaterialsInventories" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentOtherMiscellaneousInventories" xlink:label="aasb1060_CurrentOtherMiscellaneousInventories"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentInventoriesRollUp" xlink:to="aasb1060_CurrentOtherMiscellaneousInventories" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentInventories" xlink:label="aasb1060_CurrentInventories"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentInventoriesRollUp" xlink:to="aasb1060_CurrentInventories" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>

@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#BiologicalAssetsFairValueModelChanges' roleURI='http://www.xbrlsite.com/aasb1060/role/Movements/BiologicalAssetsFairValueModelChanges' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Movements/BiologicalAssetsFairValueModelChanges">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssetsFairValueModelMovementsHypercube" xlink:label="aasb1060_BiologicalAssetsFairValueModelMovementsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ClassDimension" xlink:label="aasb1060_ClassDimension"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsFairValueModelMovementsHypercube" xlink:to="aasb1060_ClassDimension" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AllClassesMember" xlink:label="aasb1060_AllClassesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ClassDimension" xlink:to="aasb1060_AllClassesMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CropsMember" xlink:label="aasb1060_CropsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_CropsMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_LivestockMember" xlink:label="aasb1060_LivestockMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_LivestockMember" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousBiologicalAssetsMember" xlink:label="aasb1060_OtherMiscellaneousBiologicalAssetsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_OtherMiscellaneousBiologicalAssetsMember" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssetsFairValueModelMovementsLineItems" xlink:label="aasb1060_BiologicalAssetsFairValueModelMovementsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsFairValueModelMovementsHypercube" xlink:to="aasb1060_BiologicalAssetsFairValueModelMovementsLineItems" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssetsRollForward" xlink:label="aasb1060_BiologicalAssetsRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsFairValueModelMovementsLineItems" xlink:to="aasb1060_BiologicalAssetsRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssets" xlink:label="aasb1060_BiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="aasb1060_BiologicalAssetsRollForward" xlink:to="aasb1060_BiologicalAssets" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GainLossFromChangesInFairValueLessCostsToSell" xlink:label="aasb1060_GainLossFromChangesInFairValueLessCostsToSell"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsRollForward" xlink:to="aasb1060_GainLossFromChangesInFairValueLessCostsToSell" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IncreasesFromPurchasesOfBiologicalAssets" xlink:label="aasb1060_IncreasesFromPurchasesOfBiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsRollForward" xlink:to="aasb1060_IncreasesFromPurchasesOfBiologicalAssets" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DecreasesFromHarvestOfBiologicalAssets" xlink:label="aasb1060_DecreasesFromHarvestOfBiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsRollForward" xlink:to="aasb1060_DecreasesFromHarvestOfBiologicalAssets" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IncreasesInBiologicalAssetsFromBusinessCombinations" xlink:label="aasb1060_IncreasesInBiologicalAssetsFromBusinessCombinations"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsRollForward" xlink:to="aasb1060_IncreasesInBiologicalAssetsFromBusinessCombinations" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EffectsOfTranslationOfForeignCurrencyOnBiologicalAssets" xlink:label="aasb1060_EffectsOfTranslationOfForeignCurrencyOnBiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsRollForward" xlink:to="aasb1060_EffectsOfTranslationOfForeignCurrencyOnBiologicalAssets" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherIncreaesDecreasesInBiologicalAssets" xlink:label="aasb1060_OtherIncreaesDecreasesInBiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BiologicalAssetsRollForward" xlink:to="aasb1060_OtherIncreaesDecreasesInBiologicalAssets" order="7" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Movements/BiologicalAssetsFairValueModelChanges">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssetsRollForward" xlink:label="aasb1060_BiologicalAssetsRollForward"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssets" xlink:label="aasb1060_BiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="aasb1060_BiologicalAssetsRollForward" xlink:to="aasb1060_BiologicalAssets" order="8" use="optional"/>
+</presentationLink>
+</link:linkbase>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#IntangibleAssetsOtherThanGoodwillItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/IntangibleAssetsOtherThanGoodwillItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/IntangibleAssetsOtherThanGoodwillItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsOtherThanGoodwillComponentsHypercube" xlink:label="aasb1060_IntangibleAssetsOtherThanGoodwillComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ClassDimension" xlink:label="aasb1060_ClassDimension"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_IntangibleAssetsOtherThanGoodwillComponentsHypercube" xlink:to="aasb1060_ClassDimension" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AllClassesMember" xlink:label="aasb1060_AllClassesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ClassDimension" xlink:to="aasb1060_AllClassesMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BrandNamesMember" xlink:label="aasb1060_BrandNamesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_BrandNamesMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_MastheadsAndPublishingTitlesMember" xlink:label="aasb1060_MastheadsAndPublishingTitlesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_MastheadsAndPublishingTitlesMember" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ComputerSoftwareMember" xlink:label="aasb1060_ComputerSoftwareMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_ComputerSoftwareMember" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_LicencesAndFranchisesMember" xlink:label="aasb1060_LicencesAndFranchisesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_LicencesAndFranchisesMember" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CopyrightsPatentsAndOtherIndustrialPropertyRightsServiceAndOperatingRightsMember" xlink:label="aasb1060_CopyrightsPatentsAndOtherIndustrialPropertyRightsServiceAndOperatingRightsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_CopyrightsPatentsAndOtherIndustrialPropertyRightsServiceAndOperatingRightsMember" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleExplorationAndEvaluationAssetsMember" xlink:label="aasb1060_IntangibleExplorationAndEvaluationAssetsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_IntangibleExplorationAndEvaluationAssetsMember" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RecipesFormulaeModelsDesignsAndPrototypesMember" xlink:label="aasb1060_RecipesFormulaeModelsDesignsAndPrototypesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_RecipesFormulaeModelsDesignsAndPrototypesMember" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsUnderDevelopmentMember" xlink:label="aasb1060_IntangibleAssetsUnderDevelopmentMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_IntangibleAssetsUnderDevelopmentMember" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousIntangibleAssetsMember" xlink:label="aasb1060_OtherMiscellaneousIntangibleAssetsMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AllClassesMember" xlink:to="aasb1060_OtherMiscellaneousIntangibleAssetsMember" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsOtherThanGoodwillComponentsLineItems" xlink:label="aasb1060_IntangibleAssetsOtherThanGoodwillComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_IntangibleAssetsOtherThanGoodwillComponentsHypercube" xlink:to="aasb1060_IntangibleAssetsOtherThanGoodwillComponentsLineItems" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsOtherThanGoodwillRollUp" xlink:label="aasb1060_IntangibleAssetsOtherThanGoodwillRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_IntangibleAssetsOtherThanGoodwillComponentsLineItems" xlink:to="aasb1060_IntangibleAssetsOtherThanGoodwillRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsOtherThanGoodwillGross" xlink:label="aasb1060_IntangibleAssetsOtherThanGoodwillGross"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_IntangibleAssetsOtherThanGoodwillRollUp" xlink:to="aasb1060_IntangibleAssetsOtherThanGoodwillGross" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AccumulatedAmortisationAndImpairmentOfIntangibleAssetsOtherThanGoodwill" xlink:label="aasb1060_AccumulatedAmortisationAndImpairmentOfIntangibleAssetsOtherThanGoodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_IntangibleAssetsOtherThanGoodwillRollUp" xlink:to="aasb1060_AccumulatedAmortisationAndImpairmentOfIntangibleAssetsOtherThanGoodwill" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsOtherThanGoodwill" xlink:label="aasb1060_IntangibleAssetsOtherThanGoodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_IntangibleAssetsOtherThanGoodwillRollUp" xlink:to="aasb1060_IntangibleAssetsOtherThanGoodwill" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

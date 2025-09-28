@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#TaxExpenseIncomeItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/TaxExpenseIncomeItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TaxExpenseIncomeItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TaxExpenseIncomeComponentsHypercube" xlink:label="aasb1060_TaxExpenseIncomeComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TaxExpenseIncomeComponentsLineItems" xlink:label="aasb1060_TaxExpenseIncomeComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TaxExpenseIncomeComponentsHypercube" xlink:to="aasb1060_TaxExpenseIncomeComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TaxExpenseIncomeRollUp" xlink:label="aasb1060_TaxExpenseIncomeRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TaxExpenseIncomeComponentsLineItems" xlink:to="aasb1060_TaxExpenseIncomeRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentTaxExpenseIncome" xlink:label="aasb1060_CurrentTaxExpenseIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TaxExpenseIncomeRollUp" xlink:to="aasb1060_CurrentTaxExpenseIncome" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IncreasesDecreasesInEstimatesRelatedToPriorYearsTax" xlink:label="aasb1060_IncreasesDecreasesInEstimatesRelatedToPriorYearsTax"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TaxExpenseIncomeRollUp" xlink:to="aasb1060_IncreasesDecreasesInEstimatesRelatedToPriorYearsTax" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxExpenseIncome" xlink:label="aasb1060_DeferredTaxExpenseIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TaxExpenseIncomeRollUp" xlink:to="aasb1060_DeferredTaxExpenseIncome" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TaxExpenseIncome" xlink:label="aasb1060_TaxExpenseIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TaxExpenseIncomeRollUp" xlink:to="aasb1060_TaxExpenseIncome" order="4" use="optional"/>
+</presentationLink>
+</link:linkbase>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OtherCurrentFinancialAssetsItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherCurrentFinancialAssetsItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherCurrentFinancialAssetsItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherCurrentFinancialAssetsComponentsHypercube" xlink:label="aasb1060_OtherCurrentFinancialAssetsComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherCurrentFinancialAssetsComponentsLineItems" xlink:label="aasb1060_OtherCurrentFinancialAssetsComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherCurrentFinancialAssetsComponentsHypercube" xlink:to="aasb1060_OtherCurrentFinancialAssetsComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherCurrentFinancialAssetsRollUp" xlink:label="aasb1060_OtherCurrentFinancialAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherCurrentFinancialAssetsComponentsLineItems" xlink:to="aasb1060_OtherCurrentFinancialAssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss" xlink:label="aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherCurrentFinancialAssetsRollUp" xlink:to="aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherCurrentFinancialAssetsMeasuredAtAmortisedCost" xlink:label="aasb1060_OtherCurrentFinancialAssetsMeasuredAtAmortisedCost"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherCurrentFinancialAssetsRollUp" xlink:to="aasb1060_OtherCurrentFinancialAssetsMeasuredAtAmortisedCost" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValueThroughOCI" xlink:label="aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValueThroughOCI"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherCurrentFinancialAssetsRollUp" xlink:to="aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValueThroughOCI" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValue" xlink:label="aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValue"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherCurrentFinancialAssetsRollUp" xlink:to="aasb1060_OtherCurrentFinancialAssetsMeasuredAtFairValue" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherCurrentFinancialAssets" xlink:label="aasb1060_OtherCurrentFinancialAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherCurrentFinancialAssetsRollUp" xlink:to="aasb1060_OtherCurrentFinancialAssets" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>

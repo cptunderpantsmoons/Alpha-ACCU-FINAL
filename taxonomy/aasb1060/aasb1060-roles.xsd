@@ -1,0 +1,496 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<!-- Mini XBRL Financial Reporting Taxonomy Roles -->
+<schema
+  xmlns='http://www.w3.org/2001/XMLSchema'
+  xmlns:xbrli='http://www.xbrl.org/2003/instance'
+  xmlns:link='http://www.xbrl.org/2003/linkbase'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  xmlns:generic='http://xbrl.org/2008/generic'
+  xmlns:aasb1060-roles='http://www.xbrlsite.com/aasb1060/roles'
+  targetNamespace='http://www.xbrlsite.com/aasb1060/roles'
+  elementFormDefault='qualified'
+  attributeFormDefault='unqualified'>
+  <annotation>
+     <appinfo>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Documentation/ReportInformation" id="ReportInformation">
+	<link:definition>001-Documentation-Report Information</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Documentation/ReportingEntityInformation" id="ReportingEntityInformation">
+	<link:definition>002-Documentation-Reporting Entity Information</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfFinancialPositionClassified" id="StatementOfFinancialPositionClassified">
+	<link:definition>100-Statement-Statement of Financial Position, Classified (Net Assets Approach)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfFinancialPositionLiquidity" id="StatementOfFinancialPositionLiquidity">
+	<link:definition>101-Statement-Statement of Financial Position, Liquidity</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfFinancialPositionClassifiedAlternative" id="StatementOfFinancialPositionClassifiedAlternative">
+	<link:definition>102-Statement-Statement of Financial Position, Classified (Alternative)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfProfitOrLossByFunction" id="StatementOfProfitOrLossByFunction">
+	<link:definition>111-Statement-Statement of Profit or Loss (by Function)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfProfitOrLossByNature" id="StatementOfProfitOrLossByNature">
+	<link:definition>112-Statement-Statement of Profit or Loss (by Nature)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfOtherComprehensiveIncome" id="StatementOfOtherComprehensiveIncome">
+	<link:definition>121-Statement-Statement of Other Comprehensive Income (OCI Compoonents Presented Net of Tax)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfCashFlowsDirectMethod" id="StatementOfCashFlowsDirectMethod">
+	<link:definition>131-Statement-Statement of Cash Flows (Direct Method)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/RestatementOfEquity" id="RestatementOfEquity">
+	<link:definition>140-Statement-Restatement of Equity (Previously Issued Financial Report)</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfChangesInEquity" id="StatementOfChangesInEquity">
+	<link:definition>141-Statement-Statement of Changes in Equity</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Policies/SignificantAccountingPolicies" id="SignificantAccountingPolicies">
+	<link:definition>201-Policies-Significant Accounting Policies</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Policies/PropertyPlantAndEquipmentPolicies" id="PropertyPlantAndEquipmentPolicies">
+	<link:definition>202-Policies-Property, Plant, and Equipment Policies</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/CashAndCashEquivalentsItems" id="CashAndCashEquivalentsItems">
+	<link:definition>251-Disaggregation-Cash and Cash Equivalents Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherCurrentReceivablesItems" id="TradeAndOtherCurrentReceivablesItems">
+	<link:definition>252-Disaggregation-Trade and Other Current Receivables Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherCurrentFinancialAssetsItems" id="OtherCurrentFinancialAssetsItems">
+	<link:definition>254-Disaggregation-Other Current Financial Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentInventoriesItems" id="CurrentInventoriesItems">
+	<link:definition>255-Disaggregation-Current Inventories Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentBiologicalAssetsItems" id="CurrentBiologicalAssetsItems">
+	<link:definition>256-Disaggregation-Current Biological Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousCurrentAssetsItems" id="OtherMiscellaneousCurrentAssetsItems">
+	<link:definition>257-Disaggregation-Other Miscelleneous Current Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/AssetsOrDisposalGroupsClassifiedAsHeldForSaleItems" id="AssetsOrDisposalGroupsClassifiedAsHeldForSaleItems">
+	<link:definition>258-Disaggregation-Assets or Disposal Groups Classified as Held for Sale Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherNoncurrentReceivablesItems" id="TradeAndOtherNoncurrentReceivablesItems">
+	<link:definition>259-Disaggregation-Trade and Other Non-current Receivables Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherNoncurrentFinancialAssetsItems" id="OtherNoncurrentFinancialAssetsItems">
+	<link:definition>260-Disaggregation-Other Non-current Financial Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/NoncurrentInventoriesItems" id="NoncurrentInventoriesItems">
+	<link:definition>261-Disaggregation-Non-current Inventories Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/PropertyPlantAndEquipmentItems" id="PropertyPlantAndEquipmentItems">
+	<link:definition>262-Disaggregation-Property, Plant and Equipment Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/InvestmentPropertyItems" id="InvestmentPropertyItems">
+	<link:definition>263-Disaggregation-Investment Property Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/IntangibleAssetsOtherThanGoodwillItems" id="IntangibleAssetsOtherThanGoodwillItems">
+	<link:definition>264-Disaggregation-Intangible Assets Other than Goodwill Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/GoodwillItems" id="GoodwillItems">
+	<link:definition>265-Disaggregation-Goodwill Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/NoncurrentBiologicalAssetsItems" id="NoncurrentBiologicalAssetsItems">
+	<link:definition>266-Disaggregation-Non-current Biological Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/InvestmentsInAssociatesItems" id="InvestmentsInAssociatesItems">
+	<link:definition>267-Disaggregation-Investments in Associates Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/InvestmentsInJointVenturesItems" id="InvestmentsInJointVenturesItems">
+	<link:definition>268-Disaggregation-Investments in Joint Ventures Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/DeferredTaxAssetsAndLiabilitiesItems" id="DeferredTaxAssetsAndLiabilitiesItems">
+	<link:definition>269-Disaggregation-Deferred Tax Assets and Liabilities Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousNoncurrentAssetsItems" id="OtherMiscellaneousNoncurrentAssetsItems">
+	<link:definition>270-Disaggregation-Other Miscellaneous Non-current Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherReceivablesItems" id="TradeAndOtherReceivablesItems">
+	<link:definition>321-Disaggregation-Trade and Other Receivables Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherFinancialAssetsItems" id="OtherFinancialAssetsItems">
+	<link:definition>322-Disaggregation-Other Financial Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/InventoriesItems" id="InventoriesItems">
+	<link:definition>323-Disaggregation-Inventories Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/BiologicalAssetsItems" id="BiologicalAssetsItems">
+	<link:definition>324-Disaggregation-Biological Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousAssetsItems" id="OtherMiscellaneousAssetsItems">
+	<link:definition>325-Disaggregation-Other Miscellaneous Assets Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherCurrentPayablesItems" id="TradeAndOtherCurrentPayablesItems">
+	<link:definition>351-Disaggregation-Trade and Other Current Payables Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherCurrentFinancialLiabilitiesItems" id="OtherCurrentFinancialLiabilitiesItems">
+	<link:definition>352-Disaggregation-Other Current Financial Liabilities Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentProvisionsItems" id="CurrentProvisionsItems">
+	<link:definition>353-Disaggregation-Current Provisions Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousCurrentLiabilitiesItems" id="OtherMiscellaneousCurrentLiabilitiesItems">
+	<link:definition>355-Disaggregation-Other Miscellaneous Current Liabilities Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/LiabilitiesOrDisposalGroupsClassifiedAsHeldForSaleItems" id="LiabilitiesOrDisposalGroupsClassifiedAsHeldForSaleItems">
+	<link:definition>356-Disaggregation-Liabilities or Disposal Groups Classified as Held for Sale Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherNoncurrentPayablesItems" id="TradeAndOtherNoncurrentPayablesItems">
+	<link:definition>357-Disaggregation-Trade and Other Non-current Payables Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/NoncurrentProvisionsItems" id="NoncurrentProvisionsItems">
+	<link:definition>358-Disaggregation-Non-current Provisions Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherNoncurrentFinancialLiabilitiesItems" id="OtherNoncurrentFinancialLiabilitiesItems">
+	<link:definition>359-Disaggregation-Other Non-current Financial Liabilities Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousNoncurrentLiabilitiesItems" id="OtherMiscellaneousNoncurrentLiabilitiesItems">
+	<link:definition>361-Disaggregation-Other Miscellaneous Non-current Liabilities Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherPayablesItems" id="TradeAndOtherPayablesItems">
+	<link:definition>381-Disaggregation-Trade and Other Payables Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherFinancialLiabilitiesItems" id="OtherFinancialLiabilitiesItems">
+	<link:definition>382-Disaggregation-Other Financial Liabilities Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/ProvisionsItems" id="ProvisionsItems">
+	<link:definition>383-Disaggregation-Provisions Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousLiabilitiesItems" id="OtherMiscellaneousLiabilitiesItems">
+	<link:definition>384-Disaggregation-Other Miscellaneous Liabilities Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/RevenueItems" id="RevenueItems">
+	<link:definition>451-Disaggregation-Revenue Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/CostOfSalesItems" id="CostOfSalesItems">
+	<link:definition>456-Disaggregation-Cost of Sales Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherOperatingIncomeItems" id="OtherOperatingIncomeItems">
+	<link:definition>461-Disaggregation-Other Operating Income Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OperatingExpensesExcludingCostOfSalesItems" id="OperatingExpensesExcludingCostOfSalesItems">
+	<link:definition>466-Disaggregation-Operating Expenses Excluding Cost of Sales Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherNonoperatingIncomeExpenseNotIncludingFinanceCostsOrTaxExpenseItems" id="OtherNonoperatingIncomeExpenseNotIncludingFinanceCostsOrTaxExpenseItems">
+	<link:definition>471-Disaggregation-Other Non-operating Income (Expense) Not Including Finance Costs or Tax Expense Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/FinanceCostsIncomeItems" id="FinanceCostsIncomeItems">
+	<link:definition>481-Disaggregation-Finance Costs (Income) Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OperatingExpensesItems" id="OperatingExpensesItems">
+	<link:definition>486-Disaggregation-Operating Expenses</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TaxExpenseIncomeItems" id="TaxExpenseIncomeItems">
+	<link:definition>491-Disaggregation-Tax Expense (Income) Items</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Movements/PropertyPlantAndEquipmentChanges" id="PropertyPlantAndEquipmentChanges">
+	<link:definition>501-Movements-Property, Plant, and Equipment Changes</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Movements/InvestmentPropertyCostMethodChanges" id="InvestmentPropertyCostMethodChanges">
+	<link:definition>502-Movements-Investment Property, Cost Method, Changes</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Movements/IntangibleAssetsOtherThanGoodwillChanges" id="IntangibleAssetsOtherThanGoodwillChanges">
+	<link:definition>503-Movements-Intangible Assets Other than Goodwill Changes</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Movements/GoodwillChanges" id="GoodwillChanges">
+	<link:definition>504-Movements-Goodwill Changes</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Movements/BiologicalAssetsFairValueModelChanges" id="BiologicalAssetsFairValueModelChanges">
+	<link:definition>505-Movements-Biological Assets Fair Value Model Changes</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Movements/BiologicalAssetsCostModelChanges" id="BiologicalAssetsCostModelChanges">
+	<link:definition>506-Movements-Biological Assets Cost Model Changes</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Movements/ProvisionsChanges" id="ProvisionsChanges">
+	<link:definition>507-Movements-Provisions Changes</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disclosure/FutureLeasePaymentsLessee" id="FutureLeasePaymentsLessee">
+	<link:definition>971-Disclosure-Future Lease Payments Lessee</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disclosure/FutureLeasePaymentsUnderNoncancellableOperatingLeases" id="FutureLeasePaymentsUnderNoncancellableOperatingLeases">
+	<link:definition>972-Disclosure-Future Lease Payments Under Non-cancellable Operating Leases</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+<link:roleType xmlns:link="http://www.xbrl.org/2003/linkbase" roleURI="http://www.xbrlsite.com/aasb1060/role/Disclosure/ShareBasedPayments" id="ShareBasedPayments">
+	<link:definition>991-Disclosure-Share-based Payments</link:definition>
+	<link:usedOn>link:presentationLink</link:usedOn>
+	<link:usedOn>link:calculationLink</link:usedOn>
+	<link:usedOn>link:definitionLink</link:usedOn>
+	<link:usedOn>generic:link</link:usedOn>
+</link:roleType>
+     </appinfo>
+  </annotation>
+<import namespace='http://www.xbrl.org/2003/instance' schemaLocation='http://www.xbrl.org/2003/xbrl-instance-2003-12-31.xsd' />
+<import namespace='http://xbrl.org/2008/generic' schemaLocation='http://www.xbrl.org/2008/generic-link.xsd' />
+</schema>

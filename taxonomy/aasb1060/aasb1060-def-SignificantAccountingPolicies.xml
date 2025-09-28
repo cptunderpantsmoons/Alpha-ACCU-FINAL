@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#SignificantAccountingPolicies' roleURI='http://www.xbrlsite.com/aasb1060/role/Policies/SignificantAccountingPolicies' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://xbrlsite.com/seattlemethod/cm/cm-arcroles.xsd#class-subClass' arcroleURI='http://www.xbrlsite.com/seattlemethod/conceptual-model/arcrole/class-subClass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Policies/SignificantAccountingPolicies">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SignificantAccountingPoliciesLineItems" xlink:label="aasb1060_SignificantAccountingPoliciesLineItems"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NatureOfOperationsTextBlock" xlink:label="aasb1060_NatureOfOperationsTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_NatureOfOperationsTextBlock" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BasisOfPresentationTextBlock" xlink:label="aasb1060_BasisOfPresentationTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_BasisOfPresentationTextBlock" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_JudgementsOfManagementTextBlock" xlink:label="aasb1060_JudgementsOfManagementTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_JudgementsOfManagementTextBlock" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RevenueRecognitionPolicyTextBlock" xlink:label="aasb1060_RevenueRecognitionPolicyTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_RevenueRecognitionPolicyTextBlock" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CashAndCashEquivalentsPoliciesTextBlock" xlink:label="aasb1060_CashAndCashEquivalentsPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_CashAndCashEquivalentsPoliciesTextBlock" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherReceivablesPoliciesTextBlock" xlink:label="aasb1060_TradeAndOtherReceivablesPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_TradeAndOtherReceivablesPoliciesTextBlock" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssetsPoliciesTextBlock" xlink:label="aasb1060_BiologicalAssetsPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_BiologicalAssetsPoliciesTextBlock" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PropertyPlantAndEquipmentPoliciesTextBlock" xlink:label="aasb1060_PropertyPlantAndEquipmentPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_PropertyPlantAndEquipmentPoliciesTextBlock" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentPropertyPoliciesTextBlock" xlink:label="aasb1060_InvestmentPropertyPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_InvestmentPropertyPoliciesTextBlock" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsOtherThanGoodwillPoliciesTextBlock" xlink:label="aasb1060_IntangibleAssetsOtherThanGoodwillPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_IntangibleAssetsOtherThanGoodwillPoliciesTextBlock" order="10" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillPoliciesTextBlock" xlink:label="aasb1060_GoodwillPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_GoodwillPoliciesTextBlock" order="11" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherPayablesPoliciesTextBlock" xlink:label="aasb1060_TradeAndOtherPayablesPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_TradeAndOtherPayablesPoliciesTextBlock" order="12" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProvisionsPoliciesTextBlock" xlink:label="aasb1060_ProvisionsPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_ProvisionsPoliciesTextBlock" order="13" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EquityPoliciesTextBlock" xlink:label="aasb1060_EquityPoliciesTextBlock"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_EquityPoliciesTextBlock" order="14" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SignificantAccountingPoliciesHypercube" xlink:label="aasb1060_SignificantAccountingPoliciesHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="aasb1060_SignificantAccountingPoliciesLineItems" xlink:to="aasb1060_SignificantAccountingPoliciesHypercube" order="15" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</definitionLink>
+</link:linkbase>

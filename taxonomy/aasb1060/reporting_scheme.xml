@@ -1,0 +1,25 @@
+<!--  Created by Charles Hoffman, CPA 7/11/2022 3:50:47 PM  -->
+<reportingScheme xmlns="http://www.xbrlsite.com/kg" code="aasb1060">
+<url>http://xbrlsite.com/2021/reporting-scheme/aasb1060</url>
+<model-structure>http://xbrlsite.com/2021/reporting-scheme/aasb1060/model-structure/model-structure-rules-strict-def.xml</model-structure>
+<entry-point>http://xbrlsite.com/2021/reporting-scheme/aasb1060/base-taxonomy/aasb1060-entryPoint.xsd</entry-point>
+<terms>http://xbrlsite.com/2021/reporting-scheme/aasb1060/base-taxonomy/aasb1060.xsd</terms>
+<labels>http://xbrlsite.com/2021/reporting-scheme/aasb1060/base-taxonomy/aasb1060-lab.xml</labels>
+<references>http://xbrlsite.com/2021/reporting-scheme/aasb1060/base-taxonomy/aasb1060-ref.xml</references>
+<structures>http://xbrlsite.com/2021/reporting-scheme/aasb1060/base-taxonomy/aasb1060-roles.xsd</structures>
+<topics>http://xbrlsite.com/2021/reporting-scheme/aasb1060/disclosures-topics/topics.xsd</topics>
+<disclosures>http://xbrlsite.com/2021/reporting-scheme/aasb1060/disclosures-topics/disclosures.xsd</disclosures>
+<disclosures-with-topics>http://xbrlsite.com/2021/reporting-scheme/aasb1060/disclosures-topics/disclosures-with-topics-def.xml</disclosures-with-topics>
+<disclosure-mechanics>http://xbrlsite.com/2021/reporting-scheme/aasb1060/disclosure-mechanics/disclosure-mechanics.xsd</disclosure-mechanics>
+<fundamental-accounting-concepts>http://xbrlsite.com/2021/reporting-scheme/aasb1060/fac/fac.xsd</fundamental-accounting-concepts>
+<mapping>http://xbrlsite.com/2021/reporting-scheme/aasb1060/fac/rules-mapping/ConceptMap_General_mapping-definition.xml</mapping>
+<reporting-styles>http://xbrlsite.com/2021/reporting-scheme/aasb1060/fac/Documentation/rss.xml</reporting-styles>
+<rules-consistency>http://xbrlsite.com/2021/reporting-scheme/aasb1060/fac/rules-consistency/rss.xml</rules-consistency>
+<rules-derivation>http://xbrlsite.com/2021/reporting-scheme/aasb1060/fac/rules-derivation/rss.xml</rules-derivation>
+<type-subtype>http://xbrlsite.com/2021/reporting-scheme/aasb1060/type-subtype/type-subtype.xsd</type-subtype>
+<reporting-checklist>http://xbrlsite.com/2021/reporting-scheme/aasb1060/reporting-checklist/reporting-checklist-rules-def.xml</reporting-checklist>
+<templates>http://xbrlsite.com/2021/reporting-scheme/aasb1060/templates/disclosures-templates-ref.xml</templates>
+<exemplars>http://xbrlsite.com/2021/reporting-scheme/aasb1060/exemplars/disclosures-exemplarsList-ref.xml</exemplars>
+<repository>http://xbrlsite.com/2021/reporting-scheme/aasb1060/repository/rss.xml</repository>
+<reference-implementation>http://xbrlsite.com/2021/reporting-scheme/aasb1060/reference-implementation/instance.xml</reference-implementation>
+</reportingScheme>

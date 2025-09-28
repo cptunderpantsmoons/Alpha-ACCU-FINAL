@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OtherFinancialAssetsItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherFinancialAssetsItems' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://xbrlsite.com/seattlemethod/cm/cm-arcroles.xsd#class-subClass' arcroleURI='http://www.xbrlsite.com/seattlemethod/conceptual-model/arcrole/class-subClass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherFinancialAssetsItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:label="aasb1060_OtherFinancialAssetsComponentsLineItems"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss" xlink:label="aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:to="aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsMeasuredAtAmortisedCost" xlink:label="aasb1060_OtherFinancialAssetsMeasuredAtAmortisedCost"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:to="aasb1060_OtherFinancialAssetsMeasuredAtAmortisedCost" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughOCI" xlink:label="aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughOCI"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:to="aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughOCI" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsMeasuredAtFairValue" xlink:label="aasb1060_OtherFinancialAssetsMeasuredAtFairValue"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:to="aasb1060_OtherFinancialAssetsMeasuredAtFairValue" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssets" xlink:label="aasb1060_OtherFinancialAssets"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:to="aasb1060_OtherFinancialAssets" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsComponentsHypercube" xlink:label="aasb1060_OtherFinancialAssetsComponentsHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:to="aasb1060_OtherFinancialAssetsComponentsHypercube" order="6" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+</definitionLink>
+</link:linkbase>

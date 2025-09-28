@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#StatementOfFinancialPositionLiquidity' roleURI='http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfFinancialPositionLiquidity' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfFinancialPositionLiquidity">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Equity" xlink:label="aasb1060_Equity"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EquityAttributableToOwnersOfParent" xlink:label="aasb1060_EquityAttributableToOwnersOfParent"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Equity" xlink:to="aasb1060_EquityAttributableToOwnersOfParent" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IssuedCapital" xlink:label="aasb1060_IssuedCapital"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_EquityAttributableToOwnersOfParent" xlink:to="aasb1060_IssuedCapital" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RetainedEarnings" xlink:label="aasb1060_RetainedEarnings"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_EquityAttributableToOwnersOfParent" xlink:to="aasb1060_RetainedEarnings" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SharePremium" xlink:label="aasb1060_SharePremium"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_EquityAttributableToOwnersOfParent" xlink:to="aasb1060_SharePremium" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TreasuryShares" xlink:label="aasb1060_TreasuryShares"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_EquityAttributableToOwnersOfParent" xlink:to="aasb1060_TreasuryShares" order="4" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherEquityInterest" xlink:label="aasb1060_OtherEquityInterest"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_EquityAttributableToOwnersOfParent" xlink:to="aasb1060_OtherEquityInterest" order="5" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherReserves" xlink:label="aasb1060_OtherReserves"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_EquityAttributableToOwnersOfParent" xlink:to="aasb1060_OtherReserves" order="6" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncontrollingInterests" xlink:label="aasb1060_NoncontrollingInterests"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Equity" xlink:to="aasb1060_NoncontrollingInterests" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NetAssets" xlink:label="aasb1060_NetAssets"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Assets" xlink:label="aasb1060_Assets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_NetAssets" xlink:to="aasb1060_Assets" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CashAndCashEquivalents" xlink:label="aasb1060_CashAndCashEquivalents"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_CashAndCashEquivalents" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherReceivables" xlink:label="aasb1060_TradeAndOtherReceivables"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_TradeAndOtherReceivables" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssets" xlink:label="aasb1060_OtherFinancialAssets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_OtherFinancialAssets" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Inventories" xlink:label="aasb1060_Inventories"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_Inventories" order="4" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PropertyPlantAndEquipmentNet" xlink:label="aasb1060_PropertyPlantAndEquipmentNet"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_PropertyPlantAndEquipmentNet" order="5" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentProperty" xlink:label="aasb1060_InvestmentProperty"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_InvestmentProperty" order="6" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsOtherThanGoodwill" xlink:label="aasb1060_IntangibleAssetsOtherThanGoodwill"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_IntangibleAssetsOtherThanGoodwill" order="7" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Goodwill" xlink:label="aasb1060_Goodwill"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_Goodwill" order="8" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssets" xlink:label="aasb1060_BiologicalAssets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_BiologicalAssets" order="9" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentsInAssociates" xlink:label="aasb1060_InvestmentsInAssociates"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_InvestmentsInAssociates" order="10" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentsInJointVentures" xlink:label="aasb1060_InvestmentsInJointVentures"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_InvestmentsInJointVentures" order="11" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxAssets" xlink:label="aasb1060_DeferredTaxAssets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_DeferredTaxAssets" order="12" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousAssets" xlink:label="aasb1060_OtherMiscellaneousAssets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_OtherMiscellaneousAssets" order="13" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AssetsOrDisposalGroupsClassifiedAsHeldForSale" xlink:label="aasb1060_AssetsOrDisposalGroupsClassifiedAsHeldForSale"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Assets" xlink:to="aasb1060_AssetsOrDisposalGroupsClassifiedAsHeldForSale" order="14" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Liabilities" xlink:label="aasb1060_Liabilities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_NetAssets" xlink:to="aasb1060_Liabilities" order="2" weight="-1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherPayables" xlink:label="aasb1060_TradeAndOtherPayables"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Liabilities" xlink:to="aasb1060_TradeAndOtherPayables" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialLiabilities" xlink:label="aasb1060_OtherFinancialLiabilities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Liabilities" xlink:to="aasb1060_OtherFinancialLiabilities" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Provisions" xlink:label="aasb1060_Provisions"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Liabilities" xlink:to="aasb1060_Provisions" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxLiabilities" xlink:label="aasb1060_DeferredTaxLiabilities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Liabilities" xlink:to="aasb1060_DeferredTaxLiabilities" order="4" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousLiabilities" xlink:label="aasb1060_OtherMiscellaneousLiabilities"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Liabilities" xlink:to="aasb1060_OtherMiscellaneousLiabilities" order="5" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_LiabilitiesOrDisposalGroupsClassifiedAsHeldForSale" xlink:label="aasb1060_LiabilitiesOrDisposalGroupsClassifiedAsHeldForSale"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_Liabilities" xlink:to="aasb1060_LiabilitiesOrDisposalGroupsClassifiedAsHeldForSale" order="6" weight="1" use="optional"/>
+</calculationLink>
+</link:linkbase>

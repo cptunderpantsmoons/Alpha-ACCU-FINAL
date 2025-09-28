@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#DeferredTaxAssetsAndLiabilitiesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/DeferredTaxAssetsAndLiabilitiesItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/DeferredTaxAssetsAndLiabilitiesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxAssetsAndLiabilitiesComponentsHypercube" xlink:label="aasb1060_DeferredTaxAssetsAndLiabilitiesComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxAssetsAndLiabilitiesComponentsLineItems" xlink:label="aasb1060_DeferredTaxAssetsAndLiabilitiesComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_DeferredTaxAssetsAndLiabilitiesComponentsHypercube" xlink:to="aasb1060_DeferredTaxAssetsAndLiabilitiesComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxAssetsAndLiabilitiesRollUp" xlink:label="aasb1060_DeferredTaxAssetsAndLiabilitiesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_DeferredTaxAssetsAndLiabilitiesComponentsLineItems" xlink:to="aasb1060_DeferredTaxAssetsAndLiabilitiesRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxAssets" xlink:label="aasb1060_DeferredTaxAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_DeferredTaxAssetsAndLiabilitiesRollUp" xlink:to="aasb1060_DeferredTaxAssets" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxLiabilities" xlink:label="aasb1060_DeferredTaxLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_DeferredTaxAssetsAndLiabilitiesRollUp" xlink:to="aasb1060_DeferredTaxLiabilities" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxAssetsLiabilities" xlink:label="aasb1060_DeferredTaxAssetsLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_DeferredTaxAssetsAndLiabilitiesRollUp" xlink:to="aasb1060_DeferredTaxAssetsLiabilities" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

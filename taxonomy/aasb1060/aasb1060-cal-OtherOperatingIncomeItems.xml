@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OtherOperatingIncomeItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherOperatingIncomeItems' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherOperatingIncomeItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherOperatingIncome" xlink:label="aasb1060_OtherOperatingIncome"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NetGainsLossesOnDisposalPropertyPlantAndEquipment" xlink:label="aasb1060_NetGainsLossesOnDisposalPropertyPlantAndEquipment"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherOperatingIncome" xlink:to="aasb1060_NetGainsLossesOnDisposalPropertyPlantAndEquipment" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GainsOnDerivativeInstrumentsFairValueThroughProfitOrLoss" xlink:label="aasb1060_GainsOnDerivativeInstrumentsFairValueThroughProfitOrLoss"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherOperatingIncome" xlink:to="aasb1060_GainsOnDerivativeInstrumentsFairValueThroughProfitOrLoss" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_FairValueAdjustmentsToInvestmentProperty" xlink:label="aasb1060_FairValueAdjustmentsToInvestmentProperty"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherOperatingIncome" xlink:to="aasb1060_FairValueAdjustmentsToInvestmentProperty" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherSundryOperatingIncome" xlink:label="aasb1060_OtherSundryOperatingIncome"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherOperatingIncome" xlink:to="aasb1060_OtherSundryOperatingIncome" order="4" weight="1" use="optional"/>
+</calculationLink>
+</link:linkbase>

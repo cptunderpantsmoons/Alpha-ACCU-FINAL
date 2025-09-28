@@ -1,0 +1,279 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// Enums
+enum Classification {
+  inventory
+  intangible
+  fvtpl
+}
+
+enum LoanStatus {
+  active
+  completed
+  expired
+  default
+}
+
+enum ReclassificationStatus {
+  pending
+  approved
+  rejected
+}
+
+// Tables
+
+model ACCU {
+  id              String         @id @default(cuid())
+  projectId       String
+  vintage         Int
+  location        String
+  issuanceDate    DateTime
+  serialRangeStart String
+  serialRangeEnd  String
+  category        String
+  quantity        Int
+  acquisitionCost Float
+  classification  Classification
+  acquisitionDate DateTime
+  entityId        String
+  userId          String
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+  status          String         @default("active")
+  loanStatus      Boolean        @default(false)
+  loanDetails     Json?
+  valuationLogs   ValuationLog[]
+  reclassificationRequests ReclassificationRequest[]
+  loans          Loan[]
+  auditLogEntries AuditLogEntry[]
+  createdBy       User?          @relation(fields: [userId], references: [id])
+  entity          Entity         @relation(fields: [entityId], references: [id])
+  project         Project        @relation(fields: [projectId], references: [id])
+
+  @@map("accus")
+  @@index([entityId])
+  @@index([status])
+}
+
+model Project {
+  id          String @id @default(cuid())
+  name        String
+  methodType  String
+  method      String
+  accus       ACCU[]
+
+  @@map("projects")
+}
+
+model ValuationLog {
+  id         String     @id @default(cuid())
+  batchId    String
+  date       DateTime
+  marketPrice Float
+  nrv        Float
+  impairment Float?
+  userId     String
+  createdAt  DateTime    @default(now())
+  entityId   String
+  batch      ACCU   @relation(fields: [batchId], references: [id], onDelete: Cascade)
+  createdBy  User        @relation(fields: [userId], references: [id])
+  @@map("valuation_logs")
+  @@index([batchId])
+  @@index([date])
+}
+
+model AuditLogEntry {
+  id        String   @id @default(cuid())
+  action    String
+  tableName String
+  recordId  String
+  oldValues Json?
+  newValues Json?
+  userId    String
+  timestamp DateTime @default(now())
+  ipAddress String?
+  entityId  String
+  user      User?    @relation(fields: [userId], references: [id])
+  batch     ACCU? @relation(fields: [recordId], references: [id], onDelete: NoAction, onUpdate: NoAction) // Polymorphic-like
+  @@map("audit_log_entries")
+  @@index([userId])
+  @@index([timestamp])
+}
+
+model JournalEntry {
+  id        String       @id @default(cuid())
+  description String
+  date      DateTime
+  userId    String
+  createdAt DateTime     @default(now())
+  entityId  String
+  lines     JournalLine[]
+  createdBy User         @relation(fields: [userId], references: [id])
+  @@map("journal_entries")
+  @@index([entityId])
+}
+
+model JournalLine {
+  id        String       @id @default(cuid())
+  entryId   String
+  accountCode String
+  debit     Float
+  credit    Float
+  description String?
+  createdAt DateTime     @default(now())
+  entityId  String
+  entry     JournalEntry @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  @@map("journal_lines")
+  @@index([entryId])
+}
+
+model XbrlTag {
+  id           String   @id @default(cuid())
+  tagName      String
+  value        String
+  context      String
+  periodStart  DateTime?
+  periodEnd    DateTime?
+  userId       String
+  createdAt    DateTime @default(now())
+  entityId     String
+  createdBy    User     @relation(fields: [userId], references: [id])
+  @@map("xbrl_tags")
+  @@index([entityId])
+}
+
+model ReclassificationRequest {
+  id         String        @id @default(cuid())
+  batchId    String
+  fromClass  Classification
+  toClass    Classification
+  reason     String?
+  status     ReclassificationStatus @default(pending)
+  submittedBy String
+  approvedBy String?
+  timestamp  DateTime     @default(now())
+  approvedAt DateTime?
+  entityId   String
+  batch      ACCU    @relation(fields: [batchId], references: [id], onDelete: Cascade)
+  submittedByUser User    @relation(fields: [submittedBy], references: [id])
+  @@map("reclassification_requests")
+  @@index([batchId])
+  @@index([status])
+}
+
+model MarketPrice {
+  id           String   @id @default(cuid())
+  date         DateTime
+  commodityType String
+  price        Float
+  source       String
+  createdAt    DateTime @default(now())
+  entityId     String
+  @@map("market_prices")
+  @@index([date])
+  @@index([entityId])
+}
+
+model User {
+  id             String               @id @default(cuid())
+  email          String               @unique
+  roles          String
+  preferences    Json?
+  createdAt      DateTime             @default(now())
+  updatedAt      DateTime             @updatedAt
+  entityId       String?
+  batches        ACCU[]
+  valuationLogs  ValuationLog[]
+  auditLogs      AuditLogEntry[]
+  journalEntries JournalEntry[]
+  reclassRequests ReclassificationRequest[]
+  settings       UserSetting[]
+  xbrlTags       XbrlTag[]
+  importJobs     ImportJob[]
+  entity         Entity?              @relation(fields: [entityId], references: [id])
+  @@map("users")
+  @@index([email])
+}
+
+model UserSetting {
+  id         String @id @default(cuid())
+  userId     String @unique
+  roles      String
+  preferences Json?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  user       User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@map("user_settings")
+}
+
+model Entity {
+  id         String      @id @default(cuid())
+  name       String
+  legalName  String?
+  address    Json?
+  contactInfo Json?
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  status     String      @default("active")
+  parentId   String?
+  batches    ACCU[]
+  users      User[]
+  loans      Loan[]
+  @@map("entities")
+  @@index([parentId])
+}
+
+model Loan {
+  id            String     @id @default(cuid())
+  batchId       String
+  creditorId    String
+  quantity      Int
+  loanAmount    Float
+  buybackRate   Float?
+  buybackDate   DateTime?
+  loanStatus    LoanStatus @default(active)
+  collateralValue Float?
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+  entityId      String
+  batch         ACCU       @relation(fields: [batchId], references: [id], onDelete: Cascade)
+  creditor      Creditor   @relation(fields: [creditorId], references: [id])
+  entity        Entity     @relation(fields: [entityId], references: [id])
+  @@map("loans")
+  @@index([batchId])
+  @@index([entityId])
+}
+
+model Creditor {
+  id           String @id @default(cuid())
+  name         String
+  contactInfo  Json?
+  terms        Json?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  loans        Loan[]
+  @@map("creditors")
+}
+
+model ImportJob {
+  id            String   @id @default(cuid())
+  fileName      String
+  status        String   @default("pending")
+  processedRows Int      @default(0)
+  errorCount    Int      @default(0)
+  createdAt     DateTime @default(now())
+  completedAt   DateTime?
+  userId        String
+  entityId      String
+  user          User     @relation(fields: [userId], references: [id])
+  @@map("import_jobs")
+  @@index([userId])
+  @@index([entityId])
+}

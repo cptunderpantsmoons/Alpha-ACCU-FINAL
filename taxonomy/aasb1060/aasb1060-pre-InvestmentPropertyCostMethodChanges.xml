@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#InvestmentPropertyCostMethodChanges' roleURI='http://www.xbrlsite.com/aasb1060/role/Movements/InvestmentPropertyCostMethodChanges' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Movements/InvestmentPropertyCostMethodChanges">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentPropertyCostMethodMovementsHypercube" xlink:label="aasb1060_InvestmentPropertyCostMethodMovementsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ClassDimension" xlink:label="aasb1060_ClassDimension"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyCostMethodMovementsHypercube" xlink:to="aasb1060_ClassDimension" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AllClassesMember" xlink:label="aasb1060_AllClassesMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ClassDimension" xlink:to="aasb1060_AllClassesMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentPropertyCostMethodMovementsLineItems" xlink:label="aasb1060_InvestmentPropertyCostMethodMovementsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyCostMethodMovementsHypercube" xlink:to="aasb1060_InvestmentPropertyCostMethodMovementsLineItems" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentPropertyRollForward" xlink:label="aasb1060_InvestmentPropertyRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyCostMethodMovementsLineItems" xlink:to="aasb1060_InvestmentPropertyRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentProperty" xlink:label="aasb1060_InvestmentProperty"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_InvestmentProperty" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AdditionsToInvestmentProperty" xlink:label="aasb1060_AdditionsToInvestmentProperty"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_AdditionsToInvestmentProperty" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ClassifiedAsHeldForSaleInvestmentProperty" xlink:label="aasb1060_ClassifiedAsHeldForSaleInvestmentProperty"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_ClassifiedAsHeldForSaleInvestmentProperty" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AcquisitionsOfInvestmentPropertyThroughBusinessCombinations" xlink:label="aasb1060_AcquisitionsOfInvestmentPropertyThroughBusinessCombinations"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_AcquisitionsOfInvestmentPropertyThroughBusinessCombinations" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RevaluationsOfInvestmentPropertyFromImpairmentLossesRecognizedReversedInOtherComprehensiveIncome" xlink:label="aasb1060_RevaluationsOfInvestmentPropertyFromImpairmentLossesRecognizedReversedInOtherComprehensiveIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_RevaluationsOfInvestmentPropertyFromImpairmentLossesRecognizedReversedInOtherComprehensiveIncome" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TransfersOfInvestmentPropertyToFromPropertyPlantAndEquipment" xlink:label="aasb1060_TransfersOfInvestmentPropertyToFromPropertyPlantAndEquipment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_TransfersOfInvestmentPropertyToFromPropertyPlantAndEquipment" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ImpairmentLossesOfInvestmentPropertyRecognizedReversedInProfitOrLoss" xlink:label="aasb1060_ImpairmentLossesOfInvestmentPropertyRecognizedReversedInProfitOrLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_ImpairmentLossesOfInvestmentPropertyRecognizedReversedInProfitOrLoss" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousIncreasesDecreasesInInvestmentProperty" xlink:label="aasb1060_OtherMiscellaneousIncreasesDecreasesInInvestmentProperty"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_OtherMiscellaneousIncreasesDecreasesInInvestmentProperty" order="8" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Movements/InvestmentPropertyCostMethodChanges">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentPropertyRollForward" xlink:label="aasb1060_InvestmentPropertyRollForward"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentProperty" xlink:label="aasb1060_InvestmentProperty"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="aasb1060_InvestmentPropertyRollForward" xlink:to="aasb1060_InvestmentProperty" order="9" use="optional"/>
+</presentationLink>
+</link:linkbase>

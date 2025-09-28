@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#StatementOfFinancialPositionLiquidity' roleURI='http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfFinancialPositionLiquidity' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfFinancialPositionLiquidity">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_StatementOfFinancialPositionLiquidityHypercube" xlink:label="aasb1060_StatementOfFinancialPositionLiquidityHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_StatementOfFinancialPositionLiquidityLineItems" xlink:label="aasb1060_StatementOfFinancialPositionLiquidityLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_StatementOfFinancialPositionLiquidityHypercube" xlink:to="aasb1060_StatementOfFinancialPositionLiquidityLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NetAssetsRollUp" xlink:label="aasb1060_NetAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_StatementOfFinancialPositionLiquidityLineItems" xlink:to="aasb1060_NetAssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AssetsRollUp" xlink:label="aasb1060_AssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NetAssetsRollUp" xlink:to="aasb1060_AssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CashAndCashEquivalents" xlink:label="aasb1060_CashAndCashEquivalents"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_CashAndCashEquivalents" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherReceivables" xlink:label="aasb1060_TradeAndOtherReceivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_TradeAndOtherReceivables" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssets" xlink:label="aasb1060_OtherFinancialAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_OtherFinancialAssets" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Inventories" xlink:label="aasb1060_Inventories"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_Inventories" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PropertyPlantAndEquipmentNet" xlink:label="aasb1060_PropertyPlantAndEquipmentNet"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_PropertyPlantAndEquipmentNet" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentProperty" xlink:label="aasb1060_InvestmentProperty"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_InvestmentProperty" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IntangibleAssetsOtherThanGoodwill" xlink:label="aasb1060_IntangibleAssetsOtherThanGoodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_IntangibleAssetsOtherThanGoodwill" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Goodwill" xlink:label="aasb1060_Goodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_Goodwill" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BiologicalAssets" xlink:label="aasb1060_BiologicalAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_BiologicalAssets" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentsInAssociates" xlink:label="aasb1060_InvestmentsInAssociates"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_InvestmentsInAssociates" order="10" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InvestmentsInJointVentures" xlink:label="aasb1060_InvestmentsInJointVentures"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_InvestmentsInJointVentures" order="11" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxAssets" xlink:label="aasb1060_DeferredTaxAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_DeferredTaxAssets" order="12" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousAssets" xlink:label="aasb1060_OtherMiscellaneousAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_OtherMiscellaneousAssets" order="13" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AssetsOrDisposalGroupsClassifiedAsHeldForSale" xlink:label="aasb1060_AssetsOrDisposalGroupsClassifiedAsHeldForSale"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_AssetsOrDisposalGroupsClassifiedAsHeldForSale" order="14" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Assets" xlink:label="aasb1060_Assets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_AssetsRollUp" xlink:to="aasb1060_Assets" order="15" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_LiabilitiesRollUp" xlink:label="aasb1060_LiabilitiesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NetAssetsRollUp" xlink:to="aasb1060_LiabilitiesRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherPayables" xlink:label="aasb1060_TradeAndOtherPayables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_LiabilitiesRollUp" xlink:to="aasb1060_TradeAndOtherPayables" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialLiabilities" xlink:label="aasb1060_OtherFinancialLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_LiabilitiesRollUp" xlink:to="aasb1060_OtherFinancialLiabilities" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Provisions" xlink:label="aasb1060_Provisions"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_LiabilitiesRollUp" xlink:to="aasb1060_Provisions" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredTaxLiabilities" xlink:label="aasb1060_DeferredTaxLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_LiabilitiesRollUp" xlink:to="aasb1060_DeferredTaxLiabilities" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousLiabilities" xlink:label="aasb1060_OtherMiscellaneousLiabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_LiabilitiesRollUp" xlink:to="aasb1060_OtherMiscellaneousLiabilities" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_LiabilitiesOrDisposalGroupsClassifiedAsHeldForSale" xlink:label="aasb1060_LiabilitiesOrDisposalGroupsClassifiedAsHeldForSale"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_LiabilitiesRollUp" xlink:to="aasb1060_LiabilitiesOrDisposalGroupsClassifiedAsHeldForSale" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Liabilities" xlink:label="aasb1060_Liabilities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_LiabilitiesRollUp" xlink:to="aasb1060_Liabilities" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NetAssets" xlink:label="aasb1060_NetAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NetAssetsRollUp" xlink:to="aasb1060_NetAssets" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EquityRollUp" xlink:label="aasb1060_EquityRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_StatementOfFinancialPositionLiquidityLineItems" xlink:to="aasb1060_EquityRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EquityAttributableToOwnersOfParentRollUp" xlink:label="aasb1060_EquityAttributableToOwnersOfParentRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityRollUp" xlink:to="aasb1060_EquityAttributableToOwnersOfParentRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IssuedCapital" xlink:label="aasb1060_IssuedCapital"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityAttributableToOwnersOfParentRollUp" xlink:to="aasb1060_IssuedCapital" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RetainedEarnings" xlink:label="aasb1060_RetainedEarnings"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityAttributableToOwnersOfParentRollUp" xlink:to="aasb1060_RetainedEarnings" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SharePremium" xlink:label="aasb1060_SharePremium"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityAttributableToOwnersOfParentRollUp" xlink:to="aasb1060_SharePremium" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TreasuryShares" xlink:label="aasb1060_TreasuryShares"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityAttributableToOwnersOfParentRollUp" xlink:to="aasb1060_TreasuryShares" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherEquityInterest" xlink:label="aasb1060_OtherEquityInterest"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityAttributableToOwnersOfParentRollUp" xlink:to="aasb1060_OtherEquityInterest" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherReserves" xlink:label="aasb1060_OtherReserves"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityAttributableToOwnersOfParentRollUp" xlink:to="aasb1060_OtherReserves" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EquityAttributableToOwnersOfParent" xlink:label="aasb1060_EquityAttributableToOwnersOfParent"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityAttributableToOwnersOfParentRollUp" xlink:to="aasb1060_EquityAttributableToOwnersOfParent" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NoncontrollingInterests" xlink:label="aasb1060_NoncontrollingInterests"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityRollUp" xlink:to="aasb1060_NoncontrollingInterests" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Equity" xlink:label="aasb1060_Equity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_EquityRollUp" xlink:to="aasb1060_Equity" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

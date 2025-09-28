@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#TradeAndOtherReceivablesItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherReceivablesItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/TradeAndOtherReceivablesItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherReceivablesComponentsHypercube" xlink:label="aasb1060_TradeAndOtherReceivablesComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherReceivablesComponentsLineItems" xlink:label="aasb1060_TradeAndOtherReceivablesComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TradeAndOtherReceivablesComponentsHypercube" xlink:to="aasb1060_TradeAndOtherReceivablesComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherReceivablesRollUp" xlink:label="aasb1060_TradeAndOtherReceivablesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TradeAndOtherReceivablesComponentsLineItems" xlink:to="aasb1060_TradeAndOtherReceivablesRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeReceivables" xlink:label="aasb1060_TradeReceivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TradeAndOtherReceivablesRollUp" xlink:to="aasb1060_TradeReceivables" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherReceivables" xlink:label="aasb1060_OtherReceivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TradeAndOtherReceivablesRollUp" xlink:to="aasb1060_OtherReceivables" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DueFromRelatedParties" xlink:label="aasb1060_DueFromRelatedParties"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TradeAndOtherReceivablesRollUp" xlink:to="aasb1060_DueFromRelatedParties" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TradeAndOtherReceivables" xlink:label="aasb1060_TradeAndOtherReceivables"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_TradeAndOtherReceivablesRollUp" xlink:to="aasb1060_TradeAndOtherReceivables" order="4" use="optional"/>
+</presentationLink>
+</link:linkbase>

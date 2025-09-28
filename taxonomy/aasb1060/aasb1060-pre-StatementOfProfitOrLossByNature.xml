@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#StatementOfProfitOrLossByNature' roleURI='http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfProfitOrLossByNature' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Statement/StatementOfProfitOrLossByNature">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_StatementOfProfitOrLossByNatureHypercube" xlink:label="aasb1060_StatementOfProfitOrLossByNatureHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_StatementOfProfitOrLossByNatureLineItems" xlink:label="aasb1060_StatementOfProfitOrLossByNatureLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_StatementOfProfitOrLossByNatureHypercube" xlink:to="aasb1060_StatementOfProfitOrLossByNatureLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossRollUp" xlink:label="aasb1060_ProfitLossRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_StatementOfProfitOrLossByNatureLineItems" xlink:to="aasb1060_ProfitLossRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossFromContinuingOperationsRollUp" xlink:label="aasb1060_ProfitLossFromContinuingOperationsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossRollUp" xlink:to="aasb1060_ProfitLossFromContinuingOperationsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossBeforeTaxRollUp" xlink:label="aasb1060_ProfitLossBeforeTaxRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossFromContinuingOperationsRollUp" xlink:to="aasb1060_ProfitLossBeforeTaxRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossFromOperatingActivitiesRollUp" xlink:label="aasb1060_ProfitLossFromOperatingActivitiesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossBeforeTaxRollUp" xlink:to="aasb1060_ProfitLossFromOperatingActivitiesRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingIncomeRollUp" xlink:label="aasb1060_OperatingIncomeRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossFromOperatingActivitiesRollUp" xlink:to="aasb1060_OperatingIncomeRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Revenue" xlink:label="aasb1060_Revenue"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingIncomeRollUp" xlink:to="aasb1060_Revenue" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherOperatingIncome" xlink:label="aasb1060_OtherOperatingIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingIncomeRollUp" xlink:to="aasb1060_OtherOperatingIncome" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingIncome" xlink:label="aasb1060_OperatingIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingIncomeRollUp" xlink:to="aasb1060_OperatingIncome" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingExpensesRollUp" xlink:label="aasb1060_OperatingExpensesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossFromOperatingActivitiesRollUp" xlink:to="aasb1060_OperatingExpensesRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PurchasesMaterials" xlink:label="aasb1060_PurchasesMaterials"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_PurchasesMaterials" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Depreciation" xlink:label="aasb1060_Depreciation"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_Depreciation" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TransportationCosts" xlink:label="aasb1060_TransportationCosts"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_TransportationCosts" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OccupancyExpenses" xlink:label="aasb1060_OccupancyExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_OccupancyExpenses" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AdministrativeExpenses" xlink:label="aasb1060_AdministrativeExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_AdministrativeExpenses" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EmployeeBenefits" xlink:label="aasb1060_EmployeeBenefits"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_EmployeeBenefits" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AdvertisingCosts" xlink:label="aasb1060_AdvertisingCosts"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_AdvertisingCosts" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherOperatingExpensesByNature" xlink:label="aasb1060_OtherOperatingExpensesByNature"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_OtherOperatingExpensesByNature" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OperatingExpenses" xlink:label="aasb1060_OperatingExpenses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OperatingExpensesRollUp" xlink:to="aasb1060_OperatingExpenses" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossFromOperatingActivities" xlink:label="aasb1060_ProfitLossFromOperatingActivities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossFromOperatingActivitiesRollUp" xlink:to="aasb1060_ProfitLossFromOperatingActivities" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NonoperatingIncomeExpensesRollUp" xlink:label="aasb1060_NonoperatingIncomeExpensesRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossBeforeTaxRollUp" xlink:to="aasb1060_NonoperatingIncomeExpensesRollUp" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_IncomeLossFromEquityAccountedEntities" xlink:label="aasb1060_IncomeLossFromEquityAccountedEntities"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NonoperatingIncomeExpensesRollUp" xlink:to="aasb1060_IncomeLossFromEquityAccountedEntities" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherNonoperatingIncomeExpenseNotIncludingFinanceCostsOrTaxExpense" xlink:label="aasb1060_OtherNonoperatingIncomeExpenseNotIncludingFinanceCostsOrTaxExpense"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NonoperatingIncomeExpensesRollUp" xlink:to="aasb1060_OtherNonoperatingIncomeExpenseNotIncludingFinanceCostsOrTaxExpense" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NonoperatingIncomeExpense" xlink:label="aasb1060_NonoperatingIncomeExpense"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_NonoperatingIncomeExpensesRollUp" xlink:to="aasb1060_NonoperatingIncomeExpense" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_FinanceCostsIncome" xlink:label="aasb1060_FinanceCostsIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossBeforeTaxRollUp" xlink:to="aasb1060_FinanceCostsIncome" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossBeforeTax" xlink:label="aasb1060_ProfitLossBeforeTax"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossBeforeTaxRollUp" xlink:to="aasb1060_ProfitLossBeforeTax" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TaxExpenseIncome" xlink:label="aasb1060_TaxExpenseIncome"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossFromContinuingOperationsRollUp" xlink:to="aasb1060_TaxExpenseIncome" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossFromContinuingOperations" xlink:label="aasb1060_ProfitLossFromContinuingOperations"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossFromContinuingOperationsRollUp" xlink:to="aasb1060_ProfitLossFromContinuingOperations" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossFromDiscontinuedOperations" xlink:label="aasb1060_ProfitLossFromDiscontinuedOperations"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossRollUp" xlink:to="aasb1060_ProfitLossFromDiscontinuedOperations" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLoss" xlink:label="aasb1060_ProfitLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ProfitLossRollUp" xlink:to="aasb1060_ProfitLoss" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_BreakdownOfProfitLossSet" xlink:label="aasb1060_BreakdownOfProfitLossSet"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_StatementOfProfitOrLossByNatureLineItems" xlink:to="aasb1060_BreakdownOfProfitLossSet" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossAttributableToNoncontrollingInterests" xlink:label="aasb1060_ProfitLossAttributableToNoncontrollingInterests"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BreakdownOfProfitLossSet" xlink:to="aasb1060_ProfitLossAttributableToNoncontrollingInterests" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ProfitLossAttributableToOwnersOfParent" xlink:label="aasb1060_ProfitLossAttributableToOwnersOfParent"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_BreakdownOfProfitLossSet" xlink:to="aasb1060_ProfitLossAttributableToOwnersOfParent" order="2" use="optional"/>
+</presentationLink>
+</link:linkbase>

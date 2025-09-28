@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OtherMiscellaneousAssetsItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousAssetsItems' xlink:type='simple'/>
+<calculationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherMiscellaneousAssetsItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherMiscellaneousAssets" xlink:label="aasb1060_OtherMiscellaneousAssets"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RestrictedCashCashEquivalents" xlink:label="aasb1060_RestrictedCashCashEquivalents"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherMiscellaneousAssets" xlink:to="aasb1060_RestrictedCashCashEquivalents" order="1" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Prepayments" xlink:label="aasb1060_Prepayments"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherMiscellaneousAssets" xlink:to="aasb1060_Prepayments" order="2" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DeferredCharges" xlink:label="aasb1060_DeferredCharges"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherMiscellaneousAssets" xlink:to="aasb1060_DeferredCharges" order="3" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ContractAssets" xlink:label="aasb1060_ContractAssets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherMiscellaneousAssets" xlink:to="aasb1060_ContractAssets" order="4" weight="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherSundryAssets" xlink:label="aasb1060_OtherSundryAssets"/>
+	<calculationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/summation-item" xlink:from="aasb1060_OtherMiscellaneousAssets" xlink:to="aasb1060_OtherSundryAssets" order="5" weight="1" use="optional"/>
+</calculationLink>
+</link:linkbase>

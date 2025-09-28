@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#GoodwillChanges' roleURI='http://www.xbrlsite.com/aasb1060/role/Movements/GoodwillChanges' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Movements/GoodwillChanges">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillMovementsHypercube" xlink:label="aasb1060_GoodwillMovementsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillMovementsLineItems" xlink:label="aasb1060_GoodwillMovementsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillMovementsHypercube" xlink:to="aasb1060_GoodwillMovementsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillRollForward" xlink:label="aasb1060_GoodwillRollForward"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillMovementsLineItems" xlink:to="aasb1060_GoodwillRollForward" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Goodwill" xlink:label="aasb1060_Goodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodStartLabel" xlink:from="aasb1060_GoodwillRollForward" xlink:to="aasb1060_Goodwill" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ChangesArisingFromNewBusinessCombinations" xlink:label="aasb1060_ChangesArisingFromNewBusinessCombinations"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillRollForward" xlink:to="aasb1060_ChangesArisingFromNewBusinessCombinations" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ImpairmentLossesImpactingGoodwill" xlink:label="aasb1060_ImpairmentLossesImpactingGoodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillRollForward" xlink:to="aasb1060_ImpairmentLossesImpactingGoodwill" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DisposalsOfPreviouslyAcquiredBusinesses" xlink:label="aasb1060_DisposalsOfPreviouslyAcquiredBusinesses"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillRollForward" xlink:to="aasb1060_DisposalsOfPreviouslyAcquiredBusinesses" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherIncreasesDecreasesInGoodwill" xlink:label="aasb1060_OtherIncreasesDecreasesInGoodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillRollForward" xlink:to="aasb1060_OtherIncreasesDecreasesInGoodwill" order="5" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Movements/GoodwillChanges">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillRollForward" xlink:label="aasb1060_GoodwillRollForward"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Goodwill" xlink:label="aasb1060_Goodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2003/role/periodEndLabel" xlink:from="aasb1060_GoodwillRollForward" xlink:to="aasb1060_Goodwill" order="6" use="optional"/>
+</presentationLink>
+</link:linkbase>

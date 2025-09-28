@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#OtherFinancialAssetsItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherFinancialAssetsItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/OtherFinancialAssetsItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsComponentsHypercube" xlink:label="aasb1060_OtherFinancialAssetsComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:label="aasb1060_OtherFinancialAssetsComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialAssetsComponentsHypercube" xlink:to="aasb1060_OtherFinancialAssetsComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsRollUp" xlink:label="aasb1060_OtherFinancialAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialAssetsComponentsLineItems" xlink:to="aasb1060_OtherFinancialAssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss" xlink:label="aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialAssetsRollUp" xlink:to="aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughProfitOrLoss" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsMeasuredAtAmortisedCost" xlink:label="aasb1060_OtherFinancialAssetsMeasuredAtAmortisedCost"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialAssetsRollUp" xlink:to="aasb1060_OtherFinancialAssetsMeasuredAtAmortisedCost" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughOCI" xlink:label="aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughOCI"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialAssetsRollUp" xlink:to="aasb1060_OtherFinancialAssetsMeasuredAtFairValueThroughOCI" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssetsMeasuredAtFairValue" xlink:label="aasb1060_OtherFinancialAssetsMeasuredAtFairValue"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialAssetsRollUp" xlink:to="aasb1060_OtherFinancialAssetsMeasuredAtFairValue" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_OtherFinancialAssets" xlink:label="aasb1060_OtherFinancialAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_OtherFinancialAssetsRollUp" xlink:to="aasb1060_OtherFinancialAssets" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>

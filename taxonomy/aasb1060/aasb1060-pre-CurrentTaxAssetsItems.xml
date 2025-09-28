@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 10/19/2022 12:00:56 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#CurrentTaxAssetsItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentTaxAssetsItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/CurrentTaxAssetsItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentTaxAssetsComponentsHypercube" xlink:label="aasb1060_CurrentTaxAssetsComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentTaxAssetsComponentsLineItems" xlink:label="aasb1060_CurrentTaxAssetsComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentTaxAssetsComponentsHypercube" xlink:to="aasb1060_CurrentTaxAssetsComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentTaxAssetsRollUp" xlink:label="aasb1060_CurrentTaxAssetsRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentTaxAssetsComponentsLineItems" xlink:to="aasb1060_CurrentTaxAssetsRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentTaxAssets" xlink:label="aasb1060_CurrentTaxAssets"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentTaxAssetsRollUp" xlink:to="aasb1060_CurrentTaxAssets" order="1" use="optional"/>
+</presentationLink>
+</link:linkbase>

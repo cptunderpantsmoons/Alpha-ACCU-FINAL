@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#GoodwillItems' roleURI='http://www.xbrlsite.com/aasb1060/role/Disaggregation/GoodwillItems' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disaggregation/GoodwillItems">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillComponentsHypercube" xlink:label="aasb1060_GoodwillComponentsHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillComponentsLineItems" xlink:label="aasb1060_GoodwillComponentsLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillComponentsHypercube" xlink:to="aasb1060_GoodwillComponentsLineItems" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillRollUp" xlink:label="aasb1060_GoodwillRollUp"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillComponentsLineItems" xlink:to="aasb1060_GoodwillRollUp" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_GoodwillGross" xlink:label="aasb1060_GoodwillGross"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillRollUp" xlink:to="aasb1060_GoodwillGross" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AccumulatedImpairmentLossesRelatedToGoodwill" xlink:label="aasb1060_AccumulatedImpairmentLossesRelatedToGoodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillRollUp" xlink:to="aasb1060_AccumulatedImpairmentLossesRelatedToGoodwill" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Goodwill" xlink:label="aasb1060_Goodwill"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_GoodwillRollUp" xlink:to="aasb1060_Goodwill" order="3" use="optional"/>
+</presentationLink>
+</link:linkbase>

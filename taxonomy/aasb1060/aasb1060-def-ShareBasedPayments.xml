@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#ShareBasedPayments' roleURI='http://www.xbrlsite.com/aasb1060/role/Disclosure/ShareBasedPayments' xlink:type='simple'/>
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#all' arcroleURI='http://xbrl.org/int/dim/arcrole/all' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#hypercube-dimension' arcroleURI='http://xbrl.org/int/dim/arcrole/hypercube-dimension' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-domain' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-domain' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#domain-member' arcroleURI='http://xbrl.org/int/dim/arcrole/domain-member' />
+<arcroleRef xlink:type='simple' xlink:href='http://www.xbrl.org/2005/xbrldt-2005.xsd#dimension-default' arcroleURI='http://xbrl.org/int/dim/arcrole/dimension-default' />
+<arcroleRef xlink:type='simple' xlink:href='http://xbrlsite.com/seattlemethod/cm/cm-arcroles.xsd#class-subClass' arcroleURI='http://www.xbrlsite.com/seattlemethod/conceptual-model/arcrole/class-subClass' />
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disclosure/ShareBasedPayments">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SharebasedPaymentsByTypeOfArrangmentLineItems" xlink:label="aasb1060_SharebasedPaymentsByTypeOfArrangmentLineItems"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:label="aasb1060_SharebasedPaymentArrangementGeneralInformationSet"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentsByTypeOfArrangmentLineItems" xlink:to="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DescriptionOfGeneralTermsAndConditionsOfSharebasedPaymentArrangementType" xlink:label="aasb1060_DescriptionOfGeneralTermsAndConditionsOfSharebasedPaymentArrangementType"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_DescriptionOfGeneralTermsAndConditionsOfSharebasedPaymentArrangementType" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_VestingRequirementsOfSharebasedPaymentArrangementType" xlink:label="aasb1060_VestingRequirementsOfSharebasedPaymentArrangementType"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_VestingRequirementsOfSharebasedPaymentArrangementType" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_MaximumTermOfOptionsGrantedOfSharebasedPaymentArrangementType" xlink:label="aasb1060_MaximumTermOfOptionsGrantedOfSharebasedPaymentArrangementType"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_MaximumTermOfOptionsGrantedOfSharebasedPaymentArrangementType" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_MethodOfSettlementOfSharebasedPaymentArrangementType" xlink:label="aasb1060_MethodOfSettlementOfSharebasedPaymentArrangementType"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_MethodOfSettlementOfSharebasedPaymentArrangementType" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_DescriptionOfHowFairValueMeasuredForGoodsAndServicesReceived" xlink:label="aasb1060_DescriptionOfHowFairValueMeasuredForGoodsAndServicesReceived"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_DescriptionOfHowFairValueMeasuredForGoodsAndServicesReceived" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_InformationAboutHowLiabilityWasMeasuredForCashsettledArrangements" xlink:label="aasb1060_InformationAboutHowLiabilityWasMeasuredForCashsettledArrangements"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_InformationAboutHowLiabilityWasMeasuredForCashsettledArrangements" order="6" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ExplanationOfModificationsToSharebasedPaymentArrangement" xlink:label="aasb1060_ExplanationOfModificationsToSharebasedPaymentArrangement"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_ExplanationOfModificationsToSharebasedPaymentArrangement" order="7" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EffectOfSharebasedPaymentTransactionsOnExpenseRecognized" xlink:label="aasb1060_EffectOfSharebasedPaymentTransactionsOnExpenseRecognized"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_EffectOfSharebasedPaymentTransactionsOnExpenseRecognized" order="8" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CarryingAmountOfLiabilitiesFromSharebasedPaymentTransactions" xlink:label="aasb1060_CarryingAmountOfLiabilitiesFromSharebasedPaymentTransactions"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentArrangementGeneralInformationSet" xlink:to="aasb1060_CarryingAmountOfLiabilitiesFromSharebasedPaymentTransactions" order="9" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NumberOfShareOptionsOutstandingRollForward" xlink:label="aasb1060_NumberOfShareOptionsOutstandingRollForward"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentsByTypeOfArrangmentLineItems" xlink:to="aasb1060_NumberOfShareOptionsOutstandingRollForward" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NumberOfShareOptionsOutstanding" xlink:label="aasb1060_NumberOfShareOptionsOutstanding"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_NumberOfShareOptionsOutstandingRollForward" xlink:to="aasb1060_NumberOfShareOptionsOutstanding" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NumberOfShareOptionsGranted" xlink:label="aasb1060_NumberOfShareOptionsGranted"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_NumberOfShareOptionsOutstandingRollForward" xlink:to="aasb1060_NumberOfShareOptionsGranted" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NumberOfShareOptionsForfeited" xlink:label="aasb1060_NumberOfShareOptionsForfeited"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_NumberOfShareOptionsOutstandingRollForward" xlink:to="aasb1060_NumberOfShareOptionsForfeited" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NumberOfShareOptionsExercised" xlink:label="aasb1060_NumberOfShareOptionsExercised"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_NumberOfShareOptionsOutstandingRollForward" xlink:to="aasb1060_NumberOfShareOptionsExercised" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NumberOfShareOptionsExpired" xlink:label="aasb1060_NumberOfShareOptionsExpired"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_NumberOfShareOptionsOutstandingRollForward" xlink:to="aasb1060_NumberOfShareOptionsExpired" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_WeightedAverageExercisePricesOfShareOptionsRollForwardInfo" xlink:label="aasb1060_WeightedAverageExercisePricesOfShareOptionsRollForwardInfo"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentsByTypeOfArrangmentLineItems" xlink:to="aasb1060_WeightedAverageExercisePricesOfShareOptionsRollForwardInfo" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_WeightedAverageExercisePriceOfShareOptionsOutstanding" xlink:label="aasb1060_WeightedAverageExercisePriceOfShareOptionsOutstanding"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_WeightedAverageExercisePricesOfShareOptionsRollForwardInfo" xlink:to="aasb1060_WeightedAverageExercisePriceOfShareOptionsOutstanding" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_WeightedAverageExercisePriceOfShareOptionsGranted" xlink:label="aasb1060_WeightedAverageExercisePriceOfShareOptionsGranted"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_WeightedAverageExercisePricesOfShareOptionsRollForwardInfo" xlink:to="aasb1060_WeightedAverageExercisePriceOfShareOptionsGranted" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_WeightedAverageExercisePriceOfShareOptionsForfeited" xlink:label="aasb1060_WeightedAverageExercisePriceOfShareOptionsForfeited"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_WeightedAverageExercisePricesOfShareOptionsRollForwardInfo" xlink:to="aasb1060_WeightedAverageExercisePriceOfShareOptionsForfeited" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_WeightedAverageExercisePriceOfShareOptionsExercised" xlink:label="aasb1060_WeightedAverageExercisePriceOfShareOptionsExercised"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_WeightedAverageExercisePricesOfShareOptionsRollForwardInfo" xlink:to="aasb1060_WeightedAverageExercisePriceOfShareOptionsExercised" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_WeightedAverageExercisePriceOfShareOptionsExpired" xlink:label="aasb1060_WeightedAverageExercisePriceOfShareOptionsExpired"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_WeightedAverageExercisePricesOfShareOptionsRollForwardInfo" xlink:to="aasb1060_WeightedAverageExercisePriceOfShareOptionsExpired" order="5" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SharebasedPaymentsExercisableSet" xlink:label="aasb1060_SharebasedPaymentsExercisableSet"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentsByTypeOfArrangmentLineItems" xlink:to="aasb1060_SharebasedPaymentsExercisableSet" order="4" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_NumberOfShareOptionsExercisable" xlink:label="aasb1060_NumberOfShareOptionsExercisable"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentsExercisableSet" xlink:to="aasb1060_NumberOfShareOptionsExercisable" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_WeightedAverageExercisePriceOfShareOptionsExercisable" xlink:label="aasb1060_WeightedAverageExercisePriceOfShareOptionsExercisable"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/domain-member" xlink:from="aasb1060_SharebasedPaymentsExercisableSet" xlink:to="aasb1060_WeightedAverageExercisePriceOfShareOptionsExercisable" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_SharebasedPaymentsByTypeOfArrangmentHypercube" xlink:label="aasb1060_SharebasedPaymentsByTypeOfArrangmentHypercube"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/all" xlink:from="aasb1060_SharebasedPaymentsByTypeOfArrangmentLineItems" xlink:to="aasb1060_SharebasedPaymentsByTypeOfArrangmentHypercube" order="5" use="optional" xmlns:xbrldt="http://xbrl.org/2005/xbrldt" xbrldt:contextElement="segment" xbrldt:closed="true"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TypeDimension" xlink:label="aasb1060_TypeDimension"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/hypercube-dimension" xlink:from="aasb1060_SharebasedPaymentsByTypeOfArrangmentHypercube" xlink:to="aasb1060_TypeDimension" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AllTypesMember" xlink:label="aasb1060_AllTypesMember"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-domain" xlink:from="aasb1060_TypeDimension" xlink:to="aasb1060_AllTypesMember" order="1" use="optional"/>
+</definitionLink>
+<definitionLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Disclosure/ShareBasedPayments">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_TypeDimension" xlink:label="aasb1060_TypeDimension"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_AllTypesMember" xlink:label="aasb1060_AllTypesMember"/>
+	<definitionArc xlink:type="arc" xlink:arcrole="http://xbrl.org/int/dim/arcrole/dimension-default" xlink:from="aasb1060_TypeDimension" xlink:to="aasb1060_AllTypesMember" order="2" use="optional"/>
+</definitionLink>
+</link:linkbase>

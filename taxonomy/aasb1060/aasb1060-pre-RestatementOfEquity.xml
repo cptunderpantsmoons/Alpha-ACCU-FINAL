@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Created by Charles Hoffman, CPA 3/1/2023 3:15:39 PM -->
+<link:linkbase xmlns='http://www.xbrl.org/2003/linkbase' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:link='http://www.xbrl.org/2003/linkbase' xsi:schemaLocation='http://www.xbrl.org/2003/linkbase http://www.xbrl.org/2003/xbrl-linkbase-2003-12-31.xsd'>
+<roleRef xlink:href='aasb1060-roles.xsd#RestatementOfEquity' roleURI='http://www.xbrlsite.com/aasb1060/role/Statement/RestatementOfEquity' xlink:type='simple'/>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Statement/RestatementOfEquity">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RetrospectiveRestatementOfEquityHypercube" xlink:label="aasb1060_RetrospectiveRestatementOfEquityHypercube"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_ReportDateDimension" xlink:label="aasb1060_ReportDateDimension"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_RetrospectiveRestatementOfEquityHypercube" xlink:to="aasb1060_ReportDateDimension" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_CurrentReportMember" xlink:label="aasb1060_CurrentReportMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_ReportDateDimension" xlink:to="aasb1060_CurrentReportMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_PriorReportMember" xlink:label="aasb1060_PriorReportMember"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_CurrentReportMember" xlink:to="aasb1060_PriorReportMember" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RetrospectiveRestatementOfEquityLineItems" xlink:label="aasb1060_RetrospectiveRestatementOfEquityLineItems"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_RetrospectiveRestatementOfEquityHypercube" xlink:to="aasb1060_RetrospectiveRestatementOfEquityLineItems" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RetrospectiveRestatementOfEquityAdjustment" xlink:label="aasb1060_RetrospectiveRestatementOfEquityAdjustment"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_RetrospectiveRestatementOfEquityLineItems" xlink:to="aasb1060_RetrospectiveRestatementOfEquityAdjustment" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Equity" xlink:label="aasb1060_Equity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrlsite.com/seattlemethod/conceptual-model/cm-roles/roles/originallyStatedLabel" xlink:from="aasb1060_RetrospectiveRestatementOfEquityAdjustment" xlink:to="aasb1060_Equity" order="1" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EffectOfMandatoryChangeInAccountingPolicy" xlink:label="aasb1060_EffectOfMandatoryChangeInAccountingPolicy"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_RetrospectiveRestatementOfEquityAdjustment" xlink:to="aasb1060_EffectOfMandatoryChangeInAccountingPolicy" order="2" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EffectOfVoluntaryChangeInAccountingPolicy" xlink:label="aasb1060_EffectOfVoluntaryChangeInAccountingPolicy"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_RetrospectiveRestatementOfEquityAdjustment" xlink:to="aasb1060_EffectOfVoluntaryChangeInAccountingPolicy" order="3" use="optional"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_EffectOfCorrectionOfPriorPeriodError" xlink:label="aasb1060_EffectOfCorrectionOfPriorPeriodError"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" xlink:from="aasb1060_RetrospectiveRestatementOfEquityAdjustment" xlink:to="aasb1060_EffectOfCorrectionOfPriorPeriodError" order="4" use="optional"/>
+</presentationLink>
+<presentationLink xmlns="http://www.xbrl.org/2003/linkbase" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended" xlink:role="http://www.xbrlsite.com/aasb1060/role/Statement/RestatementOfEquity">
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_RetrospectiveRestatementOfEquityAdjustment" xlink:label="aasb1060_RetrospectiveRestatementOfEquityAdjustment"/>
+	<loc xlink:type="locator" xlink:href="aasb1060.xsd#aasb1060_Equity" xlink:label="aasb1060_Equity"/>
+	<presentationArc xlink:type="arc" xlink:arcrole="http://www.xbrl.org/2003/arcrole/parent-child" preferredLabel="http://www.xbrl.org/2006/role/restatedLabel" xlink:from="aasb1060_RetrospectiveRestatementOfEquityAdjustment" xlink:to="aasb1060_Equity" order="5" use="optional"/>
+</presentationLink>
+</link:linkbase>
